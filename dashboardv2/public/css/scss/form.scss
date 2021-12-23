@@ -144,19 +144,19 @@ button {
 
 .btn-success {
     color: $white;
-    background-color: $color_jungle_green_approx;
-    border-color: $color_jungle_green_approx;
+    background-color: $color_rcp_primary;
+    border-color: $color_rcp_primary;
 
     &:hover {
         color: $white;
-        background-color: $color_jungle_green_approx;
-        border-color: $color_jungle_green_approx;
+        background-color: $color_rcp_primary;
+        border-color: $color_rcp_primary;
     }
 
     &:focus {
         color: $white;
-        background-color: $color_jungle_green_approx;
-        border-color: $color_jungle_green_approx;
+        background-color: $color_rcp_primary;
+        border-color: $color_rcp_primary;
     }
 }
 
@@ -216,10 +216,10 @@ button {
 
 .btn-atlas {
     padding: 10px 20px;
-    background-color: $color_keppel_approx;
+    background-color: $color_rcp_primary;
     color: $white;
     margin-bottom: 10px;
-    border: 1px $color_keppel_approx solid; //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border: 1px $color_rcp_primary solid; //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
     border-radius: 4px; //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
     transition: all 0.3s ease;
     margin: 2px;
@@ -362,7 +362,7 @@ button {
         background-color: $transparent;
 
         &:hover {
-            color: $color_keppel_approx;
+            color: $color_rcp_primary;
             background-color: $transparent;
         }
 

@@ -53,7 +53,7 @@ header.atlas-header {
             color: $color_ironside_gray_approx;
 
             &:hover {
-                color: $color_jungle_green_approx;
+                color: $color_rcp_primary;
             }
 
             i {
@@ -67,9 +67,9 @@ header.atlas-header {
             padding: 15px 14px;
 
             &:hover {
-                border-bottom: 2px solid $color_jungle_green_approx;
+                border-bottom: 2px solid $color_rcp_primary;
                 padding: 14px 14px;
-                color: $color_jungle_green_approx;
+                color: $color_rcp_primary;
             }
 
             span {
@@ -131,10 +131,10 @@ header.atlas-header {
 }
 
 #sidebar-wrapper {
-    background: $color_tuna_approx;
+    background: $white;
 
     #sideNav-wrapper {
-        color: $white;
+        color: $color_ironside_gray_approx;;
         font-size: 16px !important;
 
         .well {
@@ -201,7 +201,7 @@ header.atlas-header {
 }
 
 a {
-    color: $color_jungle_green_approx;
+    color: $color_rcp_primary;
     cursor: pointer;
 
     &:focus {
@@ -301,7 +301,7 @@ hr[size="10"] {
     }
 
     .author {
-        color: $color_keppel_approx;
+        color: $color_rcp_primary;
         margin-bottom: 0;
     }
 

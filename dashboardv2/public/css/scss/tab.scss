@@ -100,7 +100,7 @@ ul.tabs li.tab {
         position: absolute;
         bottom: 0;
         height: 2px;
-        background-color: $color_keppel_approx;
+        background-color: $color_rcp_primary;
         will-change: left, right;
     }
 
@@ -114,12 +114,12 @@ ul.tabs li.tab {
         margin: 0;
         text-transform: uppercase;
         letter-spacing: 0.8px;
-        border-bottom: 1px solid $color_mirage_approx;
+        border-bottom: 1px solid #EBEBEB;
 
         a {
             font-size: 14px;
             font-weight: 600;
-            color: $white;
+            color: $color_ironside_gray_approx;
             display: block;
             text-decoration: none;
             width: 100%;
@@ -180,7 +180,7 @@ ul.tabs li.tab {
         >li {
             &.active {
                 >a {
-                    color: $color_jungle_green_approx;
+                    color: $color_rcp_primary;
                     // background: $color_white_lilac_approx;
                 }
             }

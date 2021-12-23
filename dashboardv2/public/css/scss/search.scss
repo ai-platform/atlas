@@ -24,7 +24,7 @@ $color_celeste_approx: #1D1F2B;
     margin-left: 8px;
     padding: 3px;
     vertical-align: top;
-    background-color: $color_celeste_approx;
+    background-color: $color_ironside_gray_approx;
     border-radius: 18px;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ $color_celeste_approx: #1D1F2B;
         margin: -6px 0 0 -8px;
         width: 16px;
         height: 16px;
-        background-color: $color_jungle_green_approx;
+        background-color: $color_rcp_primary;
         border-radius: 10px;
         box-shadow: inset 0 1px rgba(black, .02);
         @include transition(inherit);
@@ -88,7 +88,7 @@ $color_celeste_approx: #1D1F2B;
     }
 
     .key {
-        color: $color_jungle_green_approx;
+        color: $color_rcp_primary;
     }
 
     .operator {
@@ -318,11 +318,11 @@ hr.hr-filter {
         }
 
         .pretty.p-switch.p-fill input:checked~.state.p-primary:before {
-            background-color: #38bb9b !important;
+            background-color: $color_rcp_primary !important;
         }
 
         .pretty.p-switch input:checked~.state.p-primary:before {
-            border-color: #38bb9b;
+            border-color: $color_rcp_primary;
         }
 
         .panel {

@@ -49,8 +49,8 @@
 
 @mixin btn-action-effect($color) {
     @if $color=='default' {
-        border: 1px $color_keppel_approx solid;
-        color: $color_keppel_approx;
+        border: 1px $color_rcp_primary solid;
+        color: $color_rcp_primary;
     }
 
     @else if $color=='blue' {
@@ -61,7 +61,7 @@
 
 @mixin btn-action-hover-effect($color1) {
     @if $color1=='default' {
-        background-color: $color_keppel_approx;
+        background-color: $color_rcp_primary;
         color: $white;
     }
 
