@@ -233,7 +233,7 @@ span#zoom_in {
 #tab-relationship {
     .entity-status {
         &.active {
-            color: $color_jungle_green_approx;
+            color: $color_rcp_primary;
         }
 
         &.deleted {
@@ -311,8 +311,8 @@ span#zoom_in {
 }
 
 .profile-bar {
-    fill: #38bb9b;
-    stroke: #38bb9b;
+    fill: $color_rcp_primary;
+    stroke: $color_rcp_primary;
     fill-opacity: 0.75;
 }
 

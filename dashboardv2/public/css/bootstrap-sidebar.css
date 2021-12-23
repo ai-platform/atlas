@@ -13,6 +13,7 @@
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    background-color: #E5E5E5;
 }
 
 #wrapper.toggled {

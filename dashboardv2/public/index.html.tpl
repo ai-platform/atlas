@@ -73,12 +73,12 @@
 </head>
 
 <body>
+    <div id="new-header" class="clearfix"></div>
     <div id="wrapper">
         <div id="sidebar-wrapper" class="sidebar-wrapper">
             <div id="sideNav-wrapper"></div>
         </div>
         <div id="page-content-wrapper" class="page-content-wrapper">
-            <div id="new-header" class="clearfix"></div>
             <div id="new-page-wrapper">
                 <div>
                     <div class="initialLoading"></div>

@@ -33,7 +33,7 @@
 
             &.active {
                 &>div {
-                    background-color: $color_jungle_green_approx;
+                    background-color: $color_rcp_primary;
                     border: none;
 
                     .tools {
@@ -41,7 +41,7 @@
                     }
 
                     &:hover {
-                        background-color: $color_jungle_green_approx;
+                        background-color: $color_rcp_primary;
                     }
                 }
 
