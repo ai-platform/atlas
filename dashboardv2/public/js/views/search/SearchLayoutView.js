@@ -421,7 +421,7 @@ define(['require',
                         title: 'Advanced Search Queries',
                         content: view,
                         okCloses: true,
-                        showFooter: true,
+                        showFooter: false,
                         allowCancel: false
                     }).open();
                     view.on('closeModal', function() {
@@ -532,7 +532,7 @@ define(['require',
                 });
 
                 _.each(_.uniq(serviceArr), function(service) {
-                    serviceStr += '<li><div class="pretty p-switch p-fill"><input type="checkbox" class="pull-left" data-value="' + (service) + '" value="" ' + (_.contains(that.selectedFilter[that.type], service) ? "checked" : "") + '/><div class="state p-primary"><label>' + (service.toUpperCase()) + '</label></div></div></li>';
+                    serviceStr += '<li><div class=""><input type="checkbox" class="pull-left" data-value="' + (service) + '" value="" ' + (_.contains(that.selectedFilter[that.type], service) ? "checked" : "") + '/><div class="state p-primary"><label>' + (service.toUpperCase()) + '</label></div></div></li>';
                 });
                 var templt = serviceStr + '<hr class="hr-filter"/><div class="text-right"><div class="divider"></div><button class="btn btn-action btn-sm filterDone">Done</button></div>';
                 return templt;
