@@ -20,6 +20,7 @@
 node_modules/
 public/js/libs/
 dist
+node_modules
 target/
 *.log
 *.tgz
