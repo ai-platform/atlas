@@ -25,15 +25,37 @@
         width: calc(100% - 50px);
         overflow: hidden;
         text-overflow: ellipsis;
+        
     }
 
     .jstree-children.jstree-children>li>a {
         max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 4px;
+        width: 141px;
+        height: 31px;
+        border: 1px solid #C53E6C;
+        box-sizing: border-box;
+        border-radius: 4px;
     }
 
-    .jstree-clicked,
-    .jstree-wholerow-clicked {
+    // .jstree-clicked,
+    // .jstree-wholerow-clicked {
+    //     background: $color_rcp_primary !important;
+    // }
+      .jstree-clicked,
+     .jstree-wholerow-clicked {
+        background: transparent !important;
+ }
+
+    .jstree-clicked {
         background: $color_rcp_primary !important;
+        //background: none;
+        width: 141px;
+        height: 31px;
+        color: white;
+        
     }
 
     .jstree-hovered {
@@ -41,11 +63,18 @@
     }
 
     .jstree-anchor {
-        color: #dbdbdb;
+       // color: #dbdbdb;
+        color: #C53E6C;
+
     }
+    .jstree-anchor:focus {
+         color: white;
+ 
+     }
 
     .jstree-search {
         color: #fbfece !important
+     
     }
 
     li[role="treeitem"] {
