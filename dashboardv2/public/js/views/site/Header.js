@@ -109,14 +109,14 @@ define(['require',
             this.options = options;
         },
         setSearchBoxWidth: function(options) {
-            var atlasHeaderWidth = this.$el.find(".atlas-header").width(),
-                minusWidth = (Utils.getUrlState.isDetailPage() || Utils.getUrlState.isBSDetail()) ? 360 : 210;
-            if (options && options.updateWidth) {
-                atlasHeaderWidth = options.updateWidth(atlasHeaderWidth);
-            }
-            if (atlasHeaderWidth > minusWidth) {
-                this.$el.find(".global-search-container").width(atlasHeaderWidth - minusWidth);
-            }
+            // var atlasHeaderWidth = this.$el.find(".atlas-header").width(),
+            //     minusWidth = (Utils.getUrlState.isDetailPage() || Utils.getUrlState.isBSDetail()) ? 360 : 210;
+            // if (options && options.updateWidth) {
+            //     atlasHeaderWidth = options.updateWidth(atlasHeaderWidth);
+            // }
+            // if (atlasHeaderWidth > minusWidth) {
+            //     this.$el.find(".global-search-container").width(atlasHeaderWidth - minusWidth);
+            // }
         },
         bindEvent: function() {
             var that = this;
