@@ -26,7 +26,7 @@
         </div>
         <div class="col-sm-6 no-padding-right">
             <button type="button" class="btn btn-action btn-md pull-right" title="Refresh" data-id="refreshTag" onclick="this.blur();" type="button"><i class="fa fa-refresh"></i></button>
-            <button type="button" class="btn btn-action btn-md pull-right" data-id="createTag" type="button"><i class="fa fa-plus"></i></button>
+            <button type="button" class="btn btn-action btn-md pull-right" title="Create Classification" data-id="createTag" type="button"><i class="fa fa-plus"></i></button>
         </div>
     </div>
 </div>
@@ -36,11 +36,11 @@
     </div>
     <div data-id="tagTreeView">
         <div class="list-view col-sm-12">
-            <input type="text" class="form-control" data-id="offlineSearchTag" placeholder="Search Classification">
+            <input style="border-width: 1px; border-color: #686868; margin-top: 10px;" type="text" class="form-control" data-id="offlineSearchTag" placeholder="Search Classification">
             <ul class="tag-tree" data-id="tagsList">
             </ul>
         </div>
-        <div class="tree-view col-sm-12" style="display: none;">
+        <div class="tree-view col-sm-12" style="display: none; margin-top: 10px;">
             <div class="treeLov">
                 <select class="form-control" data-id="treeLov"></select>
             </div>
