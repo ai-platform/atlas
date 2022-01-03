@@ -532,7 +532,7 @@ define(['require',
                             popoverClassName = type == "term" ? "termPopover" : "categoryPopover";
                         if (!that.isAssignView) {
                             var wholerowEl = $el.find("li[role='treeitem'] > .jstree-wholerow:not(:has(>div.tools))")
-                            wholerowEl.append('<div class="tools"><i class="fa fa-ellipsis-h ' + popoverClassName + '"></i></div>');
+                            wholerowEl.append('<div class="tools"><i class="fa fa-ellipsis-v ' + popoverClassName + '"></i></div>');
 
                             if (type == "term") {
                                 that.createTermAction();
