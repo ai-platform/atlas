@@ -71,7 +71,7 @@
             padding: .25rem 1.5rem;
             clear: both;
             font-weight: 400;
-            color: $color_jungle_green_approx;
+            color: $color_rcp_primary;
             text-align: inherit;
             white-space: nowrap;
             background-color: transparent;
@@ -82,8 +82,8 @@
 
 .business-metadata-options.dropdown.open {
     .btn-action {
-        background-color: $color_jungle_green_approx;
-        border: 1px solid $color_jungle_green_approx;
+        background-color: $color_rcp_primary;
+        border: 1px solid $color_rcp_primary;
         color: #fff !important;
     }
 }

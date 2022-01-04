@@ -133,7 +133,7 @@ tr.empty {
     display: inline-block;
     padding-left: 0;
     margin: 20px 0;
-    border: 1px $color_keppel_approx solid;
+    border: 1px $color_rcp_primary solid;
     margin: 0px;
     float: right;
     border-radius: 4px;
@@ -143,7 +143,7 @@ tr.empty {
     >.active>a,
     >.active>a:hover {
         background: none;
-        color: $color_keppel_approx;
+        color: $color_rcp_primary;
         background: none;
         color: #37bb9b;
         font-weight: 600;
@@ -161,7 +161,7 @@ tr.empty {
         border: none;
         float: left;
         background: $transparent;
-        color: $color_keppel_approx;
+        color: $color_rcp_primary;
         @include ellipsis();
 
         i {
@@ -170,7 +170,7 @@ tr.empty {
 
         &:hover {
             color: $white;
-            background: $color_keppel_approx
+            background: $color_rcp_primary
         }
     }
 
@@ -182,7 +182,7 @@ tr.empty {
         &:hover {
             cursor: not-allowed;
             color: $white;
-            background: $color_jungle_green_light !important;
+            background: $color_rcp_primary !important;
         }
     }
 }
@@ -203,7 +203,7 @@ tr.empty {
 
     .resizeHandler {
         &.grid-draggable {
-            background-color: $color_jungle_green_approx !important;
+            background-color: $color_rcp_primary !important;
         }
 
         &:hover {

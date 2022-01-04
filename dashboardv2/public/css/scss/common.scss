@@ -345,3 +345,35 @@ pre {
     cursor: default !important;
     background-color: transparent !important;
 }
+
+.header-sec1 {
+    // background-color: #eeee32;
+    display: flex;
+    flex: 0.3;
+}
+
+.header-sec2 {
+    // background-color: #21ee76;
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-sec3 {
+    // background-color: #3199ee;
+    display: flex;
+    flex: 0.3;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    flex: 1;
+}
+

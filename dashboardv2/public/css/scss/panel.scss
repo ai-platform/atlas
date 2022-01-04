@@ -19,12 +19,12 @@
 
 .panel-default {
     >.panel-heading {
-        color: $color_jungle_green_approx;
+        color: $color_rcp_primary;
         background: $white;
-        border-color: $color_jungle_green_approx;
+        border-color: $color_rcp_primary;
 
         button {
-            color: $color_jungle_green_approx;
+            color: $color_rcp_primary;
             background: $white;
             border: none;
         }
@@ -39,7 +39,7 @@
         >li {
             &.active {
                 >a {
-                    color: $color_jungle_green_approx;
+                    color: $color_rcp_primary;
                 }
             }
 
@@ -121,7 +121,7 @@
 }
 
 .panel-default.custom-panel>.panel-heading {
-    color: $color_jungle_green_approx;
+    color: $color_rcp_primary;
     cursor: pointer;
     border-bottom: none;
     display: inline-block;
@@ -130,7 +130,7 @@
         font-weight: normal;
 
         a:hover {
-            color: $color_jungle_green_approx;
+            color: $color_rcp_primary;
             opacity: 0.7;
         }
     }
@@ -155,5 +155,5 @@
 }
 
 .panel-default.custom-panel>.panel-heading>.btn-group>button {
-    color: $color_jungle_green_approx;
+    color: $color_rcp_primary;
 }

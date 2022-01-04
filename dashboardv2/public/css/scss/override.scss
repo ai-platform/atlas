@@ -18,10 +18,10 @@
 /* override.scss */
 
 .tabs li.tab.active {
-    border-bottom: 2px solid $color_keppel_approx;
+    border-bottom: 2px solid $color_rcp_primary;
 
     a {
-        color: $color_keppel_approx;
+        color: $color_rcp_primary;
     }
 }
 
@@ -336,9 +336,9 @@
         .rules-group-header {
             .group-actions {
                 .btn-success {
-                    color: #38BB9B !important;
+                    color: $color_rcp_primary !important;
                     background-color: transparent !important;
-                    border-color: #38BB9B !important;
+                    border-color: $color_rcp_primary !important;
                 }
 
                 .btn-danger {
@@ -375,7 +375,7 @@ div.columnmanager-visibilitycontrol {
     margin-bottom: 5px;
 
     &.open .btn-action {
-        background-color: $color_keppel_approx;
+        background-color: $color_rcp_primary;
         color: $white;
     }
 }
@@ -473,7 +473,7 @@ div.columnmanager-dropdown-container {
 }
 
 .fa-color {
-    color: $color_keppel_approx
+    color: $color_rcp_primary
 }
 
 .w30 {
@@ -486,7 +486,7 @@ div.columnmanager-dropdown-container {
 
 .renderable {
     .glyphicon {
-        color: $color_jungle_green_approx;
+        color: $color_rcp_primary;
         font-size: large;
         font-weight: bold;
     }

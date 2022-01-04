@@ -53,7 +53,7 @@ header.atlas-header {
             color: $color_ironside_gray_approx;
 
             &:hover {
-                color: $color_jungle_green_approx;
+                color: $color_rcp_primary;
             }
 
             i {
@@ -67,9 +67,9 @@ header.atlas-header {
             padding: 15px 14px;
 
             &:hover {
-                border-bottom: 2px solid $color_jungle_green_approx;
+                border-bottom: 2px solid $color_rcp_primary;
                 padding: 14px 14px;
-                color: $color_jungle_green_approx;
+                color: $color_rcp_primary;
             }
 
             span {
@@ -86,9 +86,9 @@ header.atlas-header {
 #new-page-wrapper {
     height: calc(100vh - 63px);
     overflow: auto;
-    padding-top: 15px !important;
+    // padding-top: 15px !important;
     padding-bottom: 10px !important;
-
+    
     &>div {
         height: 100%;
     }
@@ -131,10 +131,10 @@ header.atlas-header {
 }
 
 #sidebar-wrapper {
-    background: $color_tuna_approx;
+    background: $white;
 
     #sideNav-wrapper {
-        color: $white;
+        color: $color_ironside_gray_approx;;
         font-size: 16px !important;
 
         .well {
@@ -152,10 +152,10 @@ header.atlas-header {
 
 .page-title {
     padding: 0px 15px 0px 15px;
-
+    
     .title {
         padding-top: 0;
-        margin-top: 0;
+        margin-left: 2px;
     }
 
     h1 {
@@ -186,6 +186,10 @@ header.atlas-header {
     .sub-title {
         margin-bottom: 40px;
     }
+    .clearfix{
+        background-color: white;
+        margin-left: 2px;
+    }
 }
 
 .sm-title {
@@ -201,7 +205,7 @@ header.atlas-header {
 }
 
 a {
-    color: $color_jungle_green_approx;
+   
     cursor: pointer;
 
     &:focus {
@@ -301,7 +305,7 @@ hr[size="10"] {
     }
 
     .author {
-        color: $color_keppel_approx;
+        color: $color_rcp_primary;
         margin-bottom: 0;
     }
 

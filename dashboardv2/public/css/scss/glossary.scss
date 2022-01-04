@@ -18,6 +18,11 @@
     z-index: 99;
 }
 
+.fa-ellipsis-v{
+    color: $color_rcp_primary;
+}
+
+
 .jstree-default-dark {
     background: transparent !important;
 
@@ -25,27 +30,63 @@
         width: calc(100% - 50px);
         overflow: hidden;
         text-overflow: ellipsis;
+        
     }
 
     .jstree-children.jstree-children>li>a {
         max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 4px;
+        width: 141px;
+        height: 31px;
+        border: 1px solid $color_rcp_primary;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+   
+
+    // .jstree-clicked,
+    // .jstree-wholerow-clicked {
+    //     background: $color_rcp_primary !important;
+    // }
+      .jstree-clicked,
+     .jstree-wholerow-clicked {
+        background: transparent !important;
+ }
+
+     .jstree-wholerow-clicked:hover{
+         background: transparent !important;
+     }
+
+    .jstree-clicked {
+        background: $color_rcp_primary !important;
+        //background: none;
+        width: 141px;
+        height: 31px;
+        color: white;
+        
     }
 
-    .jstree-clicked,
-    .jstree-wholerow-clicked {
-        background: $color_jungle_green_approx !important;
-    }
-
-    .jstree-hovered {
-        background: $color_star_dust_approx;
-    }
+    // .jstree-hovered {
+    //     background: $color_star_dust_approx;
+    // }
 
     .jstree-anchor {
-        color: #dbdbdb;
+       // color: #dbdbdb;
+        color: #C53E6C;
+
     }
+    .jstree-anchor:focus {
+         color: white;
+        }
+        .jstree-anchor:active{
+            color: white;
+        }
 
     .jstree-search {
         color: #fbfece !important
+     
     }
 
     li[role="treeitem"] {
@@ -66,3 +107,27 @@
         }
     }
 }
+//.jstree-default-dark .jstree-node, .jstree-default-dark .jstree-icon {
+    //background: url("../../img/41px.png") no-repeat !important;
+        //background-image: url(../../img/40px.png) -100px -68px no-repeat !important;
+         //list-style:none;
+         //background-position: right center;
+        //background-repeat: no-repeat;
+       // background-position: -4px -36px;
+    // }
+
+    .jstree-default-dark .jstree-hovered {
+         background: #A53159 !important;
+         color: #FFFFFF;
+
+    }
+    .jstree-default-dark .jstree-wholerow-hovered {
+        background: none !important;
+
+      }
+
+      .jstree-anchor  .jstree-clicked{
+          color: white !important;
+      }
+
+    

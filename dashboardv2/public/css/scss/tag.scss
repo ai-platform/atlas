@@ -15,6 +15,7 @@
 // limitations under the License.
 
 //tag.scss
+
 .tag-tree {
     padding: 0; // overflow: auto;
 
@@ -22,26 +23,30 @@
         height: 150px;
         overflow-y: auto;
     }
-
+   
+    
     .child>li,
     >li {
         list-style: none;
         cursor: pointer;
-
+        
         &.parent-node {
             position: relative;
-
+            
+            
             &.active {
                 &>div {
-                    background-color: $color_jungle_green_approx;
+                    background-color: $color_rcp_primary;
                     border: none;
-
+                   
+                        color: white !important;
+                    
                     .tools {
                         display: block;
                     }
 
                     &:hover {
-                        background-color: $color_jungle_green_approx;
+                        background-color: $color_rcp_primary;
                     }
                 }
 
@@ -92,7 +97,7 @@
                 >a,
                 >div>a {
                     display: block;
-                    color: $white !important;
+                    color: $color_rcp_primary ;
                     white-space: nowrap;
                     padding: 5px 10px;
                     max-width: 91%;
@@ -100,7 +105,7 @@
                     font-size: 14px;
 
                     &:hover {
-                        color: $white !important;
+                        color: $white ;
                         text-decoration: none !important;
                     }
                 }

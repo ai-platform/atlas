@@ -1,0 +1,157 @@
+/* noto-sans-jp-regular - latin */
+// $noto-font-path: './resources/usedfonts';
+$rakuten-sans-font-path: '../../assets/fonts/rakutenSans/' !default;
+
+// @font-face {
+//   font-family: 'Noto Sans JP';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
+//     url('#{$noto-font-path}/noto-sans-jp-v24-latin-regular.woff2')
+//       format('woff2'),
+//     /* Chrome 26+, Opera 23+, Firefox 39+ */
+//       url('#{$noto-font-path}/noto-sans-jp-v24-latin-regular.woff')
+//       format('woff');
+//   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+/* noto-sans-jp-500 - latin */
+
+// @font-face {
+//   font-family: 'Noto Sans JP';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: local('Noto Sans Japanese Medium'), local('NotoSansJapanese-Medium'),
+//     url('#{$noto-font-path}/noto-sans-jp-v24-latin-500.woff2') format('woff2'),
+//     /* Chrome 26+, Opera 23+, Firefox 39+ */
+//       url('#{$noto-font-path}/noto-sans-jp-v24-latin-500.woff') format('woff');
+//   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+// /* noto-sans-jp-700 - latin */
+
+// @font-face {
+//   font-family: 'Noto Sans JP';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'),
+//     url('#{$noto-font-path}/noto-sans-jp-v24-latin-700.woff2') format('woff2'),
+//     /* Chrome 26+, Opera 23+, Firefox 39+ */
+//       url('#{$noto-font-path}/noto-sans-jp-v24-latin-700.woff') format('woff');
+//   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+/* noto-sans-jp-900 - latin */
+
+
+
+/* rakuten-sansUI-web light */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Rakuten Sans UI Light'), local('RakutenSansUI-Light'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Lt.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Lt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web light italic */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Rakuten Sans UI Light Italic'),
+    local('RakutenSansUI-Light-Italic'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_LtIt.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_LtIt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Regular */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rakuten Sans UI Regular'), local('RakutenSansUI-Regular'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Rg.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Rg.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+///* rakuten-sansUI-web Regular italic */
+//
+//@font-face {
+//  font-family: 'Rakuten Sans UI';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Rakuten Sans UI Regular Italic'), local('RakutenSansUI-Regular-Italic'),
+//  url('#{$rakuten-sans-font-path}/RakutenSansUI_W_RgIt.woff2')
+//  format('woff2'),
+//    /* Chrome 26+, Opera 23+, Firefox 39+ */
+//  url('#{$noto-font-path}/RakutenSansUI_W_RgIt.woff')
+//  format('woff');
+//  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+//}
+
+/* rakuten-sansUI-web Semi Bold */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Rakuten Sans UI Semi Bold'), local('RakutenSansUI-Semi-Bold'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_SBd.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_SBd.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Semi Bold italic */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Rakuten Sans UI Semi Bold Italic'),
+    local('RakutenSansUI-Semi-Bold-Italic'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_SBdIt.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_SBdIt.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Bold */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rakuten Sans UI Bold'), local('RakutenSansUI-Bold'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Bd.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_Bd.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rakuten-sansUI-web Bold italic */
+
+@font-face {
+  font-family: 'Rakuten Sans UI';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Rakuten Sans UI Bold Italic'), local('RakutenSansUI-Bold-Italic'),
+    url('#{$rakuten-sans-font-path}/RakutenSansUI_W_BdIt.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('#{$rakuten-sans-font-path}/RakutenSansUI_W_BdIt.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
