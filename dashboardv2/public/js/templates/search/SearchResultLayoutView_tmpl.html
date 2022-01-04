@@ -20,7 +20,7 @@
   <div class="fontLoader" style="z-index: 999">
     <i class="fa fa-refresh fa-spin-custom"></i>
   </div>
-  <div class="ellipsis-with-margin" style="display: none">
+  <div class="ellipsis-with-margin searchResultInfoText" style="display: none">
     <span class="searchResult" style="font-size: 16px"></span>
   </div>
   <div class="searchTable">
@@ -106,16 +106,16 @@
       <div id="r_searchResultTableLayoutView">
         <div class="viewPaneSearchBlock">
           {{#if isSearchTab}}
-          <h1><b>{{searchType}}</b></h1>
+          <div class="searchTypeLabel"><b>{{searchType}}</b></div>
           {{/if}}
-          <div class="entityLink" style="display: none">
-            <p class="entityLink">
+          <div class="entityLink searchTypeSubLabel" style="display: none">
+            <div class="entityLink">
               Search Atlas for existing entities {{#if entityCreate}} or
               <a href="javascript:void(0)" data-id="createEntity">
                 create new entity
               </a>
               {{/if}}
-            </p>
+            </div>
           </div>
         </div>
       </div>

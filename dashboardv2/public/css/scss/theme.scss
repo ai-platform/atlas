@@ -88,10 +88,16 @@ header.atlas-header {
     overflow: auto;
     // padding-top: 15px !important;
     padding-bottom: 10px !important;
+    background: #FFFFFF;
+
     
     &>div {
         height: 100%;
     }
+}
+.viewPane{
+   
+    background-color: white;
 }
 
 .full-parent-width {
@@ -151,7 +157,7 @@ header.atlas-header {
 }
 
 .page-title {
-    padding: 0px 15px 0px 15px;
+    padding: 16px 16px 0px 16px;
     
     .title {
         padding-top: 0;
@@ -207,16 +213,17 @@ header.atlas-header {
 a {
    
     cursor: pointer;
+    color: $color_rcp_primary;
 
     &:focus {
-        color: $color_puerto_rico_approx;
+        color: $color_rcp_primary;
         text-decoration: none;
         outline: none;
         cursor: pointer;
     }
 
     &:hover {
-        color: $color_puerto_rico_approx;
+        color: $color_rcp_primary;
         text-decoration: none;
         cursor: pointer;
     }
