@@ -64,7 +64,7 @@
         //background: none;
         width: 141px;
         height: 31px;
-        color: white;
+        color: white !important;
         
     }
 
@@ -78,10 +78,10 @@
 
     }
     .jstree-anchor:focus {
-         color: white;
+         color: white !important;
         }
         .jstree-anchor:active{
-            color: white;
+            color: white !important;
         }
 
     .jstree-search {
@@ -118,7 +118,7 @@
 
     .jstree-default-dark .jstree-hovered {
          background: #A53159 !important;
-         color: #FFFFFF;
+         color: #FFFFFF !important;
 
     }
     .jstree-default-dark .jstree-wholerow-hovered {
