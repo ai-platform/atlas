@@ -18,33 +18,65 @@
     <i class="fa fa-refresh fa-spin-custom"></i>
 </div>
 <form name="tagDefinitionform" class="hide form-horizontal" data-id="createTagForm">
-    <div class="form-group">
-        <label class="control-label col-sm-2 {{#if create}}required{{/if}}" for="name">Name</label>
+    <div class="form-group" style="display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: flex-start;">
+            <label style="font-family: Rakuten Sans UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #686868;
+        margin-bottom: 10px;
+        margin-left: 27px;
+        " for="name">Name</label>
+        </div> 
         {{#if create}}
-        <div class="col-sm-10">
-            <input class="form-control" data-id="tagName" placeholder="Name(required)" autofocus />
+        <div class="col-sm-12">
+            <input class="form-control" style="background-color: white; border: 1px black solid; color: black;" data-id="tagName" placeholder="Name(required)" autofocus />
         </div>
         {{else}}
         <span class="ellipsis-with-margin control-label text-left col-sm-10" data-id="title"></span> {{/if}}
     </div>
-    <div class="form-group">
-        <label class="control-label col-sm-2 required" for="description">Description</label>
-        <div class="col-sm-10">
-            <input class="form-control" data-id="description" value="{{description}}" placeholder="Description(required)" />
+    <div class="form-group" style="display: flex; flex-direction: column;">
+        <label style="font-family: Rakuten Sans UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #686868;
+        margin-bottom: 10px;
+        margin-left: 27px;
+        "  for="description">Description</label>
+        <div class="col-sm-12">
+            <input class="form-control" data-id="description"  style="background-color: white; border: 1px black solid; color: black;" value="{{description}}" placeholder="Description(required)" />
         </div>
     </div>
     {{#if create}}
     <div class="form-group">
         <div class="col-sm-12">
-            <label>Select classification to inherit attributes(optional)</label>
-            <p class="text-gray">Attributes define additional properties for the classification</p>
+            <label style="font-family: Rakuten Sans UI;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;">Select classification to inherit attributes(optional)</label>
+            <p class="text-gray" style="font-family: Rakuten Sans UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 12px;
+            margin-left: 13px;
+            color: #686868;">Attributes define additional properties for the classification</p>
             <select class="form-control" data-id="parentTagList" multiple="multiple"></select>
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-12">Attributes(optional)</label>
-        <div class="col-sm-12">
-            <button title="Add New Attribute" type="button" class="btn btn-action btn-sm" data-id="attributeData"><i class="fa fa-plus"></i> Add New Attributes</button>
+        <label class="col-sm-12" style="margin-left: 13px;">Attributes(optional)</label>
+        <div class="col-sm-10">
+            <button title="Add New Attribute" type="button" class="btn btn-action btn-sm" data-id="attributeData" style="width: 45%;"><i class="fa fa-plus"></i> <span style="font-family: Rakuten Sans UI;
+                font-size: 16px;
+                line-height: 24px;"> New Attributes</span></button>
         </div>
     </div>
     {{/if}}

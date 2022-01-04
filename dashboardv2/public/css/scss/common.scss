@@ -349,12 +349,12 @@ pre {
 .header-sec1 {
     // background-color: #eeee32;
     display: flex;
-    flex: 0.3;
+    flex: 0.2;
 }
 
 .header-sec2 {
     // background-color: #21ee76;
-    flex: 0.4;
+    flex: 0.6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,7 +364,7 @@ pre {
 .header-sec3 {
     // background-color: #3199ee;
     display: flex;
-    flex: 0.3;
+    flex: 0.2;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -375,5 +375,13 @@ pre {
     flex-direction: row;
     height: 64px;
     flex: 1;
+}
+
+.iconStyleChange{
+    color: #686868; 
+    border: 1px #686868 solid;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: transparent;
 }
 
