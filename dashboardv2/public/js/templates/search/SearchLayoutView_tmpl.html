@@ -27,7 +27,7 @@
                 <span class="advancedInfo" data-id="advancedInfo"><i class="fa fa-question-circle-o"></i></span>
             </div>
             <div class="col-sm-3 filter-btn-wrapper">
-                <button type="button" class="btn btn-action btn-sm pull-right typeLOV" title="Refresh" data-id="refreshBtn"><i class="fa fa-refresh"></i></button>
+                <button type="button" class="btn   pull-right typeLOV searchTabRefreshBtn" title="Refresh" data-id="refreshBtn"><img src="img/refreshicon.svg" height="36px" width="36px"></button>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
                         <select data-id="typeLOV"></select>
                     </div>
                     <div class="col-sm-2 no-padding typeFilterBtn">
-                        <button type="button" class="btn btn-action btn-md pull-right typeLOV active" title="Entity Attribute Filter" data-id="typeAttrFilter"><i class="fa fa-filter"></i></button>
+                        <button type="button" class="btn pull-right typeLOV active searchTabFilterBtn" title="Entity Attribute Filter" data-id="typeAttrFilter"><img src="img/filterIcon.svg" height="36px" width="36px"></button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                         <select data-id="tagLOV"></select>
                     </div>
                     <div class="col-sm-2 no-padding">
-                        <button type="button" class="btn btn-action btn-md pull-right active" title="Tag Attribute Filter" data-id="tagAttrFilter"><i class="fa fa-filter"></i></button>
+                        <button type="button" class="btn pull-right active searchTabFilterBtn" title="Tag Attribute Filter" data-id="tagAttrFilter"><img src="img/filterIcon.svg" height="36px" width="36px"></button>
                     </div>
                 </div>
             </div>
@@ -68,14 +68,17 @@
                 <input type="text" class="form-control" data-id="searchInput" placeholder="Search by text" style="margin: 5px 0px;">
             </div>
         </div>
-        <button class="btn btn-action" data-id="clearSearch">Clear</button>
-        <button type="button" class="btn btn-atlas pull-right" data-id="searchBtn" disabled="disabled">Search</button>
+        <div>
+        <button type="button" class="btn btn-action pull-right searchTabButton" data-id="searchBtn" disabled="disabled">Search</button>
+        <button class="btn btn-action pull-right searchTabButton" data-id="clearSearch">Clear</button>
+        
+    </div>
     </div>
     <div id="searchResult"></div>
     <div class="col-sm-12">
-        <div class="col-sm-12 well basicSaveSearch" data-id="r_saveSearchBasic"></div>
+        <div class="col-sm-12  basicSaveSearch" data-id="r_saveSearchBasic"></div>
     </div>
     <div class="col-sm-12">
-        <div class="col-sm-12 well advanceSaveSearch" data-id="r_saveSearchAdvance" style="display: none"></div>
+        <div class="col-sm-12  advanceSaveSearch" data-id="r_saveSearchAdvance" style="display: none"></div>
     </div>
 </div>
