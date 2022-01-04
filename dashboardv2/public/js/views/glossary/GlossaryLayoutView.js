@@ -656,11 +656,11 @@ define(['require',
                             var node = that.query[that.viewType],
                                 liString = "";
                             if (node.type == "Glossary") {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-plus'></i> <a href='javascript:void(0)' data-fn='createSubNode'>Create Category</a></li>" +
-                                    "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'> <a href='javascript:void(0)' data-fn='createSubNode'>Create Category</a></li>" +
+                                    "<li data-type=" + node.type + " class='listTerm'><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
                             } else {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-plus'></i> <a href='javascript:void(0)' data-fn='createSubNode'>Create Sub-Category</a></li>" +
-                                    "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Category</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'> <a href='javascript:void(0)' data-fn='createSubNode'>Create Sub-Category</a></li>" +
+                                    "<li data-type=" + node.type + " class='listTerm'><a href='javascript:void(0)' data-fn='deleteNode'>Delete Category</a></li>"
                             }
                             return "<ul>" + liString + "</ul>";
                         }
