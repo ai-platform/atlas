@@ -79,9 +79,12 @@
             <div id="sideNav-wrapper"></div>
         </div>
         <div id="page-content-wrapper" class="page-content-wrapper">
-            <div id="new-page-wrapper">
-                <div>
-                    <div class="initialLoading"></div>
+            <div class='viewPane'>
+
+                <div id="new-page-wrapper">
+                    <div class='newClass'>
+                        <div class="initialLoading"></div>
+                    </div>
                 </div>
             </div>
         </div>

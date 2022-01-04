@@ -532,7 +532,7 @@ define(['require',
                             popoverClassName = type == "term" ? "termPopover" : "categoryPopover";
                         if (!that.isAssignView) {
                             var wholerowEl = $el.find("li[role='treeitem'] > .jstree-wholerow:not(:has(>div.tools))")
-                            wholerowEl.append('<div class="tools"><i class="fa fa-ellipsis-h ' + popoverClassName + '"></i></div>');
+                            wholerowEl.append('<div class="tools"><i class="fa fa-ellipsis-v ' + popoverClassName + '"></i></div>');
 
                             if (type == "term") {
                                 that.createTermAction();
@@ -636,10 +636,10 @@ define(['require',
                             var node = that.query[that.viewType],
                                 liString = "";
                             if (node.type == "Glossary") {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-plus'></i> <a href='javascript:void(0)' data-fn='createSubNode'>Create Term</a></li>" +
-                                    "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'> <a href='javascript:void(0)' data-fn='createSubNode'>Create Term</a></li>" +
+                                    "<li data-type=" + node.type + " class='listTerm'><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
                             } else {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Term</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Term</a></li>"
                             }
                             return "<ul>" + liString + "</ul>";
                         }
@@ -656,11 +656,11 @@ define(['require',
                             var node = that.query[that.viewType],
                                 liString = "";
                             if (node.type == "Glossary") {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-plus'></i> <a href='javascript:void(0)' data-fn='createSubNode'>Create Category</a></li>" +
-                                    "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'> <a href='javascript:void(0)' data-fn='createSubNode'>Create Category</a></li>" +
+                                    "<li data-type=" + node.type + " class='listTerm'><a href='javascript:void(0)' data-fn='deleteNode'>Delete Glossary</a></li>"
                             } else {
-                                liString = "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-plus'></i> <a href='javascript:void(0)' data-fn='createSubNode'>Create Sub-Category</a></li>" +
-                                    "<li data-type=" + node.type + " class='listTerm'><i class='fa fa-trash-o'></i><a href='javascript:void(0)' data-fn='deleteNode'>Delete Category</a></li>"
+                                liString = "<li data-type=" + node.type + " class='listTerm'> <a href='javascript:void(0)' data-fn='createSubNode'>Create Sub-Category</a></li>" +
+                                    "<li data-type=" + node.type + " class='listTerm'><a href='javascript:void(0)' data-fn='deleteNode'>Delete Category</a></li>"
                             }
                             return "<ul>" + liString + "</ul>";
                         }

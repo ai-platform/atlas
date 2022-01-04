@@ -26,7 +26,7 @@
 }
 
 .modal-header {
-    padding: 15px;
+    padding: 13px;
     border-bottom: 1px solid #DEDEDE;
 
     .header-button {
@@ -44,10 +44,31 @@
         }
     }
 }
+.closeIcon{
+    color: $black;
+    opacity: 0.8;
+    margin-top: 0;
+}
+
+.closeIcon:hover{
+    color: $black;
+    opacity: 1;
+}
+
+.moreLink{
+    margin-top: 24px;
+    padding-left: 22.5px;
+    .moreLinkText{
+        font-size: 16px;
+        font-weight: 400;
+        vertical-align: middle;
+    }
+}
 
 .modal-title {
-    font-weight: 600;
+    font-weight: 700;
     -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
 
 .modal-footer {
@@ -166,7 +187,7 @@
 
     .select2-selection--single,
     .select2-selection--multiple {
-        min-height: 34px;
+        min-height: 36px;
 
         .select2-selection__rendered {
             padding-left: 12px;
@@ -213,6 +234,12 @@
         }
     }
 }
+.searchTabRefreshBtn{
+    padding: 0;
+}
+.searchTabFilterBtn{
+    padding: 0;
+}
 
 .fixed-popover {
     position: fixed;
@@ -235,18 +262,43 @@
 .popover-content {
     max-height: 150px;
     overflow: auto;
+    border-radius: 0px;
+    max-width: 100%;
+   
+
+
 
     ul {
         color: $dark_gray;
-        padding: 0px 5px;
-        margin-bottom: 0px;
+        padding: 0px 0px;
+        margin: -9px -14px;
         cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+
 
         a {
             color: $dark_gray;
-            padding: 5px;
+            padding: 7px;
+        }
+        li{
+            padding: 6px 2px;
+        }
+        li:hover{
+            background-color: $color_rcp_primary;
+            a{
+                color: white;
+            }
         }
     }
+}
+.popover .arrow {
+    display: none;
+}
+.popover{
+    border-radius: 0px;
+    border: 0px ;
 }
 
 .tab-content>.tab-pane.active {
