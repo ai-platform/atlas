@@ -16,7 +16,6 @@
 -->
 <header class="clearfix atlas-header">
     <div class="mainHeader">
-
         <div class="header-sec1">
             <div style="display: flex; flex: 0.25">
                 <div class="ul_icon" style="display: flex ;flex:0.65">
@@ -35,10 +34,14 @@
         </div>
         
         <div class="has-feedback align-left-right-icon search-box header-sec2">
-            <div style="display: flex; width: 100%; align-items: center; justify-content: center;">
-                <div class="fa fa-search " style="position: absolute; left: 14%;"></div>
-                <input type="text" class="form-control global-search" style="background-color: #F7F7F7; width: 60%;" name="global search" placeholder="Search" data-id="globalSearch" />
-                <!-- <div class="fa fa-times clearable" data-id="clearGlobalSearch" style=""></div> -->
+            <div style="display: flex; width: 100%; align-items: center; justify-content: center; font-family: Rakuten Sans UI;">
+            <div style="align-items: center; justify-content: center; ">
+                <span class="fa fa-search form-control-feedback" style="margin-top: 15px;"></span>
+            </div>
+                <input type="text" class="form-control global-search" style="
+                background-color: #F7F7F7; 
+                width: 100%;     
+                font-family: Rakuten Sans UI" name="global search" placeholder="Search" data-id="globalSearch" />
                 <a ><img style="margin-left: 20px"  src="img/squareButton.png" height="36px" width="36px"></a>
                 <a><img style="margin-left: 20px"  src="img/squareQues.png" height="36px" width="36px"></a>
             </div>
@@ -47,47 +50,16 @@
         <div class="header-sec3">
 
             <div style=" display: flex;flex:0.5; align-items: center; justify-content: flex-end;">
+                <a class="show-stat" href="" title=""><img style="margin-right: 20px"  src="img/code.png" height="17.5px" width="17.5px"></a>
 
-                <a class="show-stat" href="javascript:void(0);" title="Statistics"><img style="margin-right: 20px"  src="img/code.png" height="17.5px" width="17.5px"></a>
+                <a class="show-stat" href="" title=""><img style="margin-right: 20px"  src="img/calender.png" height="17.5px" width="17.5px"></a>
 
-                <a class="show-stat" href="javascript:void(0);" title="Statistics"><img style="margin-right: 20px"  src="img/calender.png" height="17.5px" width="17.5px"></a>
-
-                <a class="show-stat" href="javascript:void(0);" title="Statistics"><img style="margin-right: 20px"  src="img/VerticalDots.png" height="17.5px" width="17.5px"></a>
-
-                <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><img style="margin-right: 20px"  src="img/user.png" height="40px" width="40px"></a>
-            </div>
-
-        </div>
-    </div>
-    <!-- <table>
-        <tr>
-            <td>
-                <ul class="ul_icon" style="display: flex">
-                    <li style="position: absolute; left: 0; top: 0;"><img src="img/R_logo.png" height="64px" width="64px"></li>
-                    <li class="bars-icon" style="margin-left: 30%; position: absolute;">
-                        <a href="javascript:void(0);" data-id="menuHamburger"><i class="fa fa-bars fa-lg"></i></a>
-                    </li>                    
-                </ul>
-            </td>
-            <td>
-                <div class="title-container">
-                    <div class="title">Atlas</div>
-                    <div class="subtitle">Dashboard</div>
-                </div>
-            </td>
-            <td class="global-search-container">
-                <div class="has-feedback align-left-right-icon search-box">
-                    <span class="fa fa-search form-control-feedback"></span>
-                    <input type="text" class="form-control global-search" style="    background-color: #F7F7F7;" name="global search" placeholder="Search entities" data-id="globalSearch" />
-                    <span class="fa fa-times form-control-feedback clearable" data-id="clearGlobalSearch"></span>
-                </div>
-            </td>
-            <td>
-                <table class="header-menu">
+                <a class="show-stat" href="" title=""><img style="margin-right: 20px"  src="img/VerticalDots.png" height="17.5px" width="17.5px"></a>
+            
+                <table class="header-menu" style="width: 50%; margin-top: 4px; margin-right: 10px;">
                     <tr>
-                        <td><a class="show-stat" href="javascript:void(0);" title="Statistics"><i class="fa fa-bar-chart"></i></a></td>
-                        <td>
-                            <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><i class="fa fa-user user-circle "></i><span class="userName"></span></a>
+                        <td class="dropdown">
+                            <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user-dropdown"><i class="fa fa-user user-circle "></i></a>
                             <ul class="dropdown-menu pull-right multi-level">
                                 <li><a href="javascript:void(0)" data-id='administrator'>Administration</a></li>
                                 <li class="dropdown-submenu">
@@ -121,15 +93,14 @@
                                     </ul>
                                 </li>
                                 <li role="separator" class="divider"></li>
-                                <li><a data-id="uiSwitch" href="javascript:void(0)">Switch to New</a></li>
                                 <li>
                                     <a href="javascript:void(0)" data-id="signOut"><i class="fa fa-sign-out"></i>Logout</a>
                                 </li>
                             </ul>
                         </td>
                     </tr>
-                </table>
-            </td>
-        </tr>
-    </table> -->
+                </table>           
+                </div>
+        </div>
+    </div>
 </header>

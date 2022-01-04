@@ -34,17 +34,15 @@
 
       &.active {
         & > div {
-          background-color: $color_rcp_primary;
+          background-color: $color_celeste_approx;
           border: none;
-
-          color: white !important;
 
           .tools {
             display: block;
           }
 
           &:hover {
-            background-color: $color_rcp_primary;
+            background-color: $color_celeste_approx;
           }
         }
 
@@ -52,6 +50,7 @@
           &:after {
             height: 4px;
             top: -5px;
+            color: $color_celeste_approx;
           }
         }
       }
@@ -63,7 +62,7 @@
         border-radius: 4px;
 
         &:hover {
-          background-color: $color_star_dust_approx;
+          // background-color: $color_star_dust_approx;
         }
 
         > .fa.toggleArrow {
