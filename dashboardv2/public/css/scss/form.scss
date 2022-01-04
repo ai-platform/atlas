@@ -53,7 +53,7 @@
         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
         background-color: $color_white_lilac_approx;
         border: 1px $color_mystic_approx solid;
-
+        
         &[disabled] {
             background-color: $color_gallery_approx;
         }
@@ -79,7 +79,8 @@
 
     .form-control {
         background-color: $white;
-        border: 1px #9C9C9C solid;
+       // border: 1px $white solid;
+       border: 1px solid #9C9C9C
     }
 }
 

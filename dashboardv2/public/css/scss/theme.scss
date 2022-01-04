@@ -90,6 +90,7 @@ header.atlas-header {
     padding-bottom: 10px !important;
     background: #FFFFFF;
 
+    
     &>div {
         height: 100%;
     }
@@ -157,10 +158,10 @@ header.atlas-header {
 
 .page-title {
     padding: 0px 15px 0px 15px;
-
+    
     .title {
         padding-top: 0;
-        margin-top: 0;
+        margin-left: 2px;
     }
 
     h1 {
@@ -190,6 +191,10 @@ header.atlas-header {
 
     .sub-title {
         margin-bottom: 40px;
+    }
+    .clearfix{
+        background-color: white;
+        margin-left: 2px;
     }
 }
 
