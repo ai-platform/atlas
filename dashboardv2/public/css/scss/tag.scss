@@ -54,9 +54,9 @@
           }
         }
 
-        .dummy {
+        .cTabActiveClass {
           background-color: $color_rcp_primary;
-          .dummy2 {
+          .cTabActiveClass2 {
             color: white;
           }
         }
@@ -70,9 +70,9 @@
         border-radius: 4px;
 
         &:hover {
-          .dummy {
+          .cTabActiveClass {
             background-color: $color_rcp_primary;
-            .dummy2 {
+            .cTabActiveClass2 {
               color: $white;
             }
           }

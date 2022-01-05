@@ -319,9 +319,9 @@ define(['require',
                         var name = options.name,
                             hasChild = isTree && options.children && options.children.length;
                         return '<li class="parent-node" data-id="tags">' +
-                            '<div class="dummy"><div class="tools"><i class="fa fa-ellipsis-h tagPopover"></i></div>' +
+                            '<div class="cTabActiveClass"><div class="tools"><i class="fa fa-ellipsis-h tagPopover"></i></div>' +
                             (hasChild ? '<i class="fa toggleArrow fa-angle-right" data-id="expandArrow" data-name="' + name + '"></i>' : '') +
-                            '<a class="dummy2" href="#!/tag/tagAttribute/' + name + '?viewType=' + (isTree ? 'tree' : 'flat') + '&searchType=basic&tag=' + name + '" data-name="' + name + '">' + name + '</a></div>' +
+                            '<a class="cTabActiveClass2" href="#!/tag/tagAttribute/' + name + '?viewType=' + (isTree ? 'tree' : 'flat') + '&searchType=basic&tag=' + name + '" data-name="' + name + '">' + name + '</a></div>' +
                             (isTree && hasChild ? '<ul class="child hide">' + that.generateTree({ 'data': options.children, 'isTree': isTree }) + '</ul>' : '') + '</li>';
                     };
                 if (isTree) {
