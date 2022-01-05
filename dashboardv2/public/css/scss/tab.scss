@@ -206,3 +206,9 @@ ul.tabs li.tab {
         font-size: 16px;
     }
 }
+
+.dummy {
+    &:hover {
+        color: $white;
+    }
+}
