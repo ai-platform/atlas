@@ -513,10 +513,10 @@ define(['require',
                 var value = object.value,
                     entityLabel = this.capitalize(_.escape(value.name));
 
-                return '<div class=" row ' + value.isOptional + '"><span class="col-sm-3">' +
-                    '<label><span class="' + (value.isOptional ? 'true' : 'false required') + '">' + entityLabel + '</span><span class="center-block ellipsis-with-margin text-gray" title="Data Type : ' + value.typeName + '">' + '(' + _.escape(value.typeName) + ')' + '</span></label></span>' +
+                return '<div style="margin-top: 10px;"> <div class=" row ' + value.isOptional + ' " style="display: grid;"><span class="col-sm-3">' +
+                    '<label style="display: -webkit-box;"><span class="' + (value.isOptional ? 'true' : 'false required') + '" style="font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;">' + entityLabel + '</span><span class="center-block ellipsis-with-margin text-gray" style="display: inline; font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;margin-top: 3px; margin-left: 2px" title="Data Type : ' + value.typeName + '">' + '(' + _.escape(value.typeName) + ')' + '</span></label></span>' +
                     '<span class="col-sm-9">' + (this.getElement(object)) +
-                    '</input></span></div>';
+                    '</input></span></div></div>';
             },
             getFieldElementContainer: function(object) {
                 var htmlField = object.htmlField,
@@ -524,7 +524,7 @@ define(['require',
                     relationshipType = object.relationshipType ? object.relationshipType : false,
                     alloptional = object.alloptional,
                     typeOfDefination = (relationshipType ? "Relationships" : "Attributes");
-                return '<div class="attribute-dash-box ' + (alloptional ? "alloptional" : "") + ' "><span class="attribute-type-label">' + (typeOfDefination) + '</span>' + htmlField + '</div>';
+                return '<div class="' + (alloptional ? "alloptional" : "") + ' ">' + htmlField + '</div>';
             },
             getSelect: function(object) {
                 var value = object.value,
@@ -588,7 +588,7 @@ define(['require',
                     entityValue = _.escape(object.entityValue),
                     isAttribute = object.isAttribute,
                     isRelation = object.isRelation;
-                return '<input class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
+                return '<input style="background: #FFFFFF;border: 1px solid #9C9C9C;box-sizing: border-box;border-radius: 4px;" class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
                     ' data-type="' + value.typeName + '"' +
                     ' value="' + entityValue + '"' +
                     ' data-key="' + name + '"' +
