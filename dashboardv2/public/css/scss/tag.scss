@@ -26,7 +26,6 @@
 
   .child > li,
   > li {
-    list-style: none;
     cursor: pointer;
 
     &.parent-node {
@@ -34,15 +33,17 @@
 
       &.active {
         & > div {
-          background-color: $color_celeste_approx;
+          background-color: $color_rcp_primary;
           border: none;
+          color: $white ;
 
           .tools {
             display: block;
           }
 
           &:hover {
-            background-color: $color_celeste_approx;
+            background-color: $color_rcp_primary;
+            color: $white;
           }
         }
 
@@ -50,9 +51,16 @@
           &:after {
             height: 4px;
             top: -5px;
-            color: $color_celeste_approx;
           }
         }
+
+        .cTabActiveClass {
+          background-color: $color_rcp_primary;
+          .cTabActiveClass2 {
+            color: white;
+          }
+        }
+
       }
 
       & > div {
@@ -62,7 +70,12 @@
         border-radius: 4px;
 
         &:hover {
-          // background-color: $color_star_dust_approx;
+          .cTabActiveClass {
+            background-color: $color_rcp_primary;
+            .cTabActiveClass2 {
+              color: $white;
+            }
+          }
         }
 
         > .fa.toggleArrow {
@@ -103,7 +116,6 @@
 
           &:hover {
             color: $white;
-            text-decoration: none !important;
           }
         }
 
@@ -255,4 +267,12 @@ border-radius: 4px;
 .addtag-propagte-box {
   border: 1px solid #ddd;
   border-radius: 7px;
+}
+
+.headerFont {
+font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
 }
