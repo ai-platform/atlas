@@ -33,6 +33,7 @@
 }
 
 .form-group {
+    
     .required:after {
         content: "*";
         padding-left: 1%;
@@ -47,6 +48,8 @@
         &.text-right {
             text-align: right;
         }
+       
+        
     }
 
     .form-control {
@@ -64,7 +67,10 @@
             box-shadow: inset 0 1px 1px $black_7_5, 0 0 2px $color_bali_hai_approx;
         }
     }
+  
 }
+
+
 
 .form-color {
 
@@ -319,7 +325,7 @@ button {
 
         &.btn-icon {
             @include btn-action-effect('blue');
-            color: $tag_color !important;
+        
 
             &:hover {
                 color: $color_havelock_blue_approx;

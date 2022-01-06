@@ -494,10 +494,11 @@ var DropDownItemView = Backbone.View.extend({
     }));
 
     if (this.column.get("renderable")) {
-      this.$el.addClass((this.column.get("renderable")) ? "visible" : null);
+      this.$el[0].children[0].children[0].checked=true;
     }
     else {
-      this.$el.removeClass("visible");
+      this.$el[0].children[0].children[0].checked=false;
+
     }
 
     return this;
@@ -684,7 +685,7 @@ Backgrid.Extension.ColumnManagerVisibilityControl = Backbone.View.extend({
 
     // Item view
     DropdownItemView: DropDownItemView,
-    dropdownItemTemplate: _.template("<span class='indicator'></span><span class='column-label'><%= label %></span>")
+    dropdownItemTemplate: _.template("<span class=''><input type='checkbox' class='columnCheckBox' checked /></span><span class='column-label'><%= label %></span>")
   },
 
   /**

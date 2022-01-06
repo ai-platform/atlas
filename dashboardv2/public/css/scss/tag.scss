@@ -30,12 +30,14 @@
 
     &.parent-node {
       position: relative;
-
+      list-style-type: none !important;
       &.active {
         & > div {
           background-color: $color_rcp_primary;
           border: none;
           color: $white ;
+
+          color: white !important;
 
           .tools {
             display: block;
@@ -58,9 +60,19 @@
           background-color: $color_rcp_primary;
           .cTabActiveClass2 {
             color: white;
+            text-decoration: none !important;
+          
           }
         }
 
+      }
+      .cTabActiveClass {
+     
+        .cTabActiveClass2 {
+     
+          text-decoration: none !important;
+        
+        }
       }
 
       & > div {
@@ -68,12 +80,14 @@
         margin-top: 5px;
         /* margin-bottom: 5px; */
         border-radius: 4px;
+        
 
         &:hover {
           .cTabActiveClass {
             background-color: $color_rcp_primary;
             .cTabActiveClass2 {
               color: $white;
+              text-decoration: none !important;
             }
           }
         }
