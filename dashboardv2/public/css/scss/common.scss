@@ -384,4 +384,47 @@ pre {
     font-size: 14px;
     background-color: transparent;
 }
+.searchSaveBlock{
+    border-top: 1px solid #F2F2F2;
+    padding: 18px 0;
+    border-bottom: 1px solid #F2F2F2;
+    color:#333333
+}
+.savedSearchItem{
+    margin: 8px 0;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 5px;
+}
+
+.savedSearchHeader{
+    border-bottom: 1px solid #F2F2F2;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+.saveSearchList{
+   font-size: 14px;
+   color: $color_rcp_primary;
+   .parent-node:not(.active){
+   .saveSearchPopover{
+       color: $color_rcp_primary !important;
+   }
+   .savedSearchItem:hover{
+    background-color: $white !important;
+    }
+}
+   .active{
+       
+       background: $color_rcp_primary;
+       color: $white !important ;
+       border-radius: 3px;
+       padding: 1px;
+       .saveSearchPopover{
+       color: $white !important ;
+
+       }
+       
+   }
+}
 
