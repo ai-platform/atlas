@@ -98,7 +98,7 @@ define(['require',
                     okText: okLabel,
                     allowCancel: true,
                     okCloses: false,
-                    width: '50%'
+                    width: '40%'
                 }).open();
                 this.modal.$el.find('button.ok').attr("disabled", true);
                 this.modal.on('ok', function(e) {
@@ -513,7 +513,7 @@ define(['require',
                 var value = object.value,
                     entityLabel = this.capitalize(_.escape(value.name));
 
-                return '<div style="margin-top: 10px;"> <div class=" row ' + value.isOptional + ' " style="display: grid;"><span class="col-sm-3">' +
+                return '<div style="margin-top: 10px; width:455px;"> <div class=" row ' + value.isOptional + ' " style="display: grid;"><span class="col-sm-3">' +
                     '<label style="display: -webkit-box;"><span class="' + (value.isOptional ? 'true' : 'false required') + '" style="font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;">' + entityLabel + '</span><span class="center-block ellipsis-with-margin text-gray" style="display: inline; font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;margin-top: 3px; margin-left: 2px" title="Data Type : ' + value.typeName + '">' + '(' + _.escape(value.typeName) + ')' + '</span></label></span>' +
                     '<span class="col-sm-9">' + (this.getElement(object)) +
                     '</input></span></div></div>';
