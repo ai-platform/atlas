@@ -35,7 +35,7 @@
 .form-group {
     
     .required:after {
-        content: "*";
+        // content: "*";
         padding-left: 1%;
         color: $red;
     }
@@ -535,7 +535,7 @@ button {
         margin-top: 25px;
 
         span.required:after {
-            content: "*";
+            // content: "*";
             padding-left: 1%;
             color: $red;
         }
