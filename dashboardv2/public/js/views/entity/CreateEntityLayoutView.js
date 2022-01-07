@@ -573,7 +573,7 @@ define(['require',
                     }
                 } catch (err) {}
 
-                return '<textarea class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
+                return '<textarea style="background: #FFFFFF;border: 1px solid #9C9C9C;box-sizing: border-box;border-radius: 4px;" class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
                     ' data-type="' + value.typeName + '"' +
                     ' data-key="' + name + '"' +
                     ' data-attribute="' + isAttribute + '"' +
