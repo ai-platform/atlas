@@ -311,7 +311,7 @@ define(['require',
                     categories = "";
                 _.each(data, function(val) {
                     var name = _.escape(val.displayText);
-                    categories += '<span data-guid="' + val.categoryGuid + '" class="btn btn-action btn-sm btn-icon btn-blue" data-id="categoryClick"><span>' + name + '</span><i class="fa fa-close" data-id="removeCategory" data-type="category" title="Remove Category"></i></span>';
+                    categories += '<span style="margin-bottom:-60px;" data-guid="' + val.categoryGuid + '" class="btn btn-action btn-sm btn-icon btn-blue" data-id="categoryClick"><span>' + name + '</span><i class="fa fa-close" data-id="removeCategory" data-type="category" title="Remove Category"></i></span>';
                 });
                 this.ui.categoryList.find("span.btn").remove();
                 this.ui.categoryList.prepend(categories);
@@ -331,7 +331,7 @@ define(['require',
                 var that = this,
                     tagData = "";
                 _.each(tagObject, function(val) {
-                    tagData += '<span class="btn btn-action btn-sm btn-icon btn-blue" data-id="tagClickTerm"><span>' + val.typeName + '</span><i class="fa fa-close" data-id="removeTagTerm" data-type="tag" title="Remove Classification"></i></span>';
+                    tagData += '<span style="margin-bottom:-60px;" class="btn btn-action btn-sm btn-icon btn-blue" data-id="tagClickTerm"><span>' + val.typeName + '</span><i class="fa fa-close" data-id="removeTagTerm" data-type="tag" title="Remove Classification"></i></span>';
                 });
                 this.ui.tagList.find("span.btn").remove();
                 this.ui.tagList.prepend(tagData);

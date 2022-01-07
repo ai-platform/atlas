@@ -14,11 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 -->
-<div class="page-title clearfix">
+<div class="page-title clearfix" >
     <div class="fontLoader">
         <i class="fa fa-refresh fa-spin-custom"></i>
     </div>
-    <div data-id="details" class="clearfix form-horizontal col-sm-12">
+    <div data-id="details" class="clearfix form-horizontal col-sm-12" >
         <h1 class="row title"><span data-id="title"></span></h1>
         <button type="button" data-id="editButton" class="btn btn-sm btn-action pull-right"><i class="fa fa-pencil"></i></button>
         <div class="form-group clearfix">
@@ -34,22 +34,23 @@
             </div>
         </div>
         {{#if isTermView}}
-        <div class="form-group clearfix">
-            <span class="control-label-sm-pr pull-left">Classifications:</span>
-            <div class="pull-left" data-id="tagListTerm">
+        <div class="form-group clearfix" style="display: table;float: right;">
+            <span style="display: table; margin-top: -84px;margin-right: 60px;" class="control-label-sm-pr ">Classifications:</span>
+            <div style="display: table; flex-direction: column;float: right;margin-top: -26px;margin-right: 38px;"  data-id="tagListTerm" style="margin-top: -84px;margin-right: -80px;">
                 <button class="btn btn-action btn-sm" title="Add Classification" data-id="addTagTerm">
                     <i class="fa fa-plus"> </i>
                 </button>
             </div>
         </div>
-        <div class="form-group clearfix">
-            <span class="control-label-sm-pr pull-left">Categories:</span>
-            <div class="pull-left" data-id="categoryList">
+        <div class="form-group clearfix" style="display: table; flex-direction: column;float: right;">
+            <span style="display: table; justify-content: flex-start;margin-top: -84px;margin-right: 80px;" class="control-label-sm-pr ">Categories:</span>
+            <div style="display: table; flex-direction: column;float: right;margin-top: -26px;margin-right: 58px;"  data-id="categoryList" style="margin-top: -84px;margin-right: -80px;">
                 <button class="btn btn-action btn-sm" title="Add Category" data-id="addCategory">
                     <i class="fa fa-plus"> </i>
                 </button>
             </div>
         </div>
+        <hr style="width: 100%;">
         {{/if}} {{#if isCategoryView}}
         <div class="form-group clearfix">
             <span class="control-label-sm-pr pull-left">Terms:</span>
