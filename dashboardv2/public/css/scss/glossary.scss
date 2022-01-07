@@ -131,3 +131,21 @@
       }
 
     
+.btn .btn-action .btn-sm .btn-icon .btn-blue{
+    background-color: #C53E6C;
+}
+      
+.nav-tabs>li.active>a{
+    border: none !important;
+    border-bottom: 2px solid #C53E6C !important;
+}
+// .nav-tabs>li>a{
+//     border-bottom: 1px solid #C53E6C;
+// }
+.nav-tabs>li.focus>a:active{
+    border: #C53E6C;
+}
+.nav-tabs>li>a:hover{
+    background: #C53E6C;
+    color: #FFFFFF;
+}
