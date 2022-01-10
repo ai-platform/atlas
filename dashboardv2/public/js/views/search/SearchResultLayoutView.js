@@ -374,7 +374,7 @@ define([
           },
           gridOpts: {
             emptyText: "No Records found!",
-            className: "table table-hover backgrid table-quickMenu colSort",
+            className: "table table-hover backgrid  colSort",
           },
           sortOpts: {
             sortColumn: "name",
@@ -678,7 +678,7 @@ define([
             ) {
               var searchString=' <div class="viewPaneSearchResultsBlock">'+
               
-             ' <div class="searchTypeLabel"><b>Basic Search</b></div>'+
+             ' <div class="searchTypeLabel"><b>'+that.searchType+'</b></div>'+
            
               '<div class="entityLink searchTypeSubLabel">'+
                 '<div class="entityLink"> Search Atlas for existing entities or '+

@@ -14,16 +14,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 -->
-<table class="table table-hover table-quickMenu">
-    <thead>
-        <tr>
+<table class="table table-hover table-quickMenu" style="border-collapse: collapse;">
+    <thead >
+        <tr style="background-color: white;">
             <th>{{#if relationTypeTable}}Relation Types{{else}}Term{{/if}}</th>
             <th>{{#if relationTypeTable}}Related Terms{{else}}Attribute{{/if}}</th>
             {{#if relationTypeTable}}
             <th>Attributes</th>{{/if}}
         </tr>
     </thead>
-    <tbody>
+    <tbody style="color: #C53E6C;">
         {{#if relationTypeTable}} {{#each attributes}}
         <tr>
             <td>{{@key}}</td>

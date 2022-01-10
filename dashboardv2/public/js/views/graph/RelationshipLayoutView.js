@@ -147,7 +147,7 @@ define([
                     searchString = _.escape(options.searchString),
                     listString = "",
                     getEntityTypelist = function(options) {
-                        var activeEntityColor = "#4a90e2",
+                        var activeEntityColor = "#C53E6C",
                             deletedEntityColor = "#BB5838",
                             entityTypeHtml = "<pre>",
                             getdefault = function(obj) {
@@ -262,7 +262,7 @@ define([
                 var activeEntityColor = "#00b98b",
                     deletedEntityColor = "#BB5838",
                     defaultEntityColor = "#e0e0e0",
-                    selectedNodeColor = "#4a90e2";
+                    selectedNodeColor = "#C53E6C";
 
                 var svg = d3
                     .select(this.$("svg")[0])
