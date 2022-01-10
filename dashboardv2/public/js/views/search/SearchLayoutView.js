@@ -145,7 +145,7 @@ define(['require',
                         saveSearchCollection = new VSearchList();
                     saveSearchCollection.url = UrlLinks.saveSearchApiUrl();
                     saveSearchBaiscCollection.fullCollection.comparator = function(model) {
-                        return model.get('name').toLowerCase();
+                        return (model.get('name'))?model.get('name').toLowerCase():model.get('name');
                     }
                     saveSearchAdvanceCollection.fullCollection.comparator = function(model) {
                         return model.get('name').toLowerCase();
@@ -532,11 +532,12 @@ define(['require',
                 });
 
                 _.each(_.uniq(serviceArr), function(service) {
-                    serviceStr += '<li><div class=""><input type="checkbox" class="pull-left" data-value="' + (service) + '" value="" ' + (_.contains(that.selectedFilter[that.type], service) ? "checked" : "") + '/><div class="state p-primary"><label>' + (service.toUpperCase()) + '</label></div></div></li>';
+                    serviceStr += '<li><div class="filterCheckBox"><label class="main">'+(service.toUpperCase())+ '<input type="checkbox" class="pull-left checkboxStyle" data-value="' + (service) + '" value="" ' + (_.contains(that.selectedFilter[that.type], service) ? "checked" : "") + '/> <span class="checkmark"></span><div class="state p-primary"><div></div></div></label></li>';
                 });
-                var templt = serviceStr + '<hr class="hr-filter"/><div class="text-right"><div class="divider"></div><button class="btn btn-action btn-sm filterDone">Done</button></div>';
+                var templt = serviceStr + '<hr class="hr-filter"/><div class="text-right"><button class="btn btn-action btn-sm filterDone">Done</button></div>';
                 return templt;
             },
+            
             renderTypeTagList: function(options) {
                 var that = this;
                 var serviceTypeToBefiltered = (options && options.filterList);
