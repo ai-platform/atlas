@@ -653,7 +653,7 @@ define([
               that.pageFrom = that.pageTo - that.limit + 1;
             }
             that.ui.pageRecordText.html(
-              "Showing  <u>" +
+              "Displaying  <u>" +
                 that.searchCollection.models.length +
                 " records</u> From " +
                 that.pageFrom +
@@ -1002,51 +1002,55 @@ define([
                 nameHtml =
                   '<div class="readOnly readOnlyLink">' + nameHtml + "</div>";
               }
-              var getImageData = function (options) {
-                var imagePath = options.imagePath,
-                  returnImgUrl = null;
-                that.checkEntityImage[model.get("guid")] = false;
-                $.ajax({
-                  url: imagePath,
-                  method: "get",
-                  cache: true,
-                }).always(function (data, status, xhr) {
-                  if (data.status == 404) {
-                    returnImgUrl = getImageData({
-                      imagePath: Utils.getEntityIconPath({
-                        entityData: obj,
-                        errorUrl: imagePath,
-                      }),
-                    });
-                  } else if (data) {
-                    that.checkEntityImage[model.get("guid")] = imagePath;
-                    returnImgUrl = imagePath;
-                    that
-                      .$("img[data-imgGuid='" + obj.guid + "']")
-                      .removeClass("searchTableLogoLoader")
-                      .attr("src", imagePath);
-                  }
-                });
-              };
+              // var getImageData = function (options) {
+              //   var imagePath = options.imagePath,
+              //     returnImgUrl = null;
+              //   that.checkEntityImage[model.get("guid")] = false;
+              //   $.ajax({
+              //     url: imagePath,
+              //     method: "get",
+              //     cache: true,
+              //   }).always(function (data, status, xhr) {
+              //     if (data.status == 404) {
+              //       returnImgUrl = getImageData({
+              //         imagePath: Utils.getEntityIconPath({
+              //           entityData: obj,
+              //           errorUrl: imagePath,
+              //         }),
+              //       });
+              //     } else if (data) {
+              //       that.checkEntityImage[model.get("guid")] = imagePath;
+              //       returnImgUrl = imagePath;
+              //       that
+              //         .$("img[data-imgGuid='" + obj.guid + "']")
+              //         .removeClass("searchTableLogoLoader")
+              //         .attr("src", imagePath);
+              //     }
+              //   });
+              // };
               var img = "";
               img =
                 "<div><img data-imgGuid='" +
                 obj.guid +
                 "' class='searchTableLogoLoader'></div>";
-              if (that.checkEntityImage[model.get("guid")] == undefined) {
-                getImageData({
-                  imagePath: Utils.getEntityIconPath({ entityData: obj }),
-                });
-              } else {
-                if (that.checkEntityImage[model.get("guid")] != false) {
-                  img =
+              // if (that.checkEntityImage[model.get("guid")] == undefined) {
+              //   getImageData({
+              //     imagePath: Utils.getEntityIconPath({ entityData: obj }),
+              //   });
+              // } else {
+              //   if (that.checkEntityImage[model.get("guid")] != false) {
+              //     img =
+              //       "<div><img data-imgGuid='" +
+              //       obj.guid +
+              //       "' src='" +
+              //       that.checkEntityImage[model.get("guid")] +
+              //       "'></div>";
+              //   }
+              // }
+                    img =
                     "<div><img data-imgGuid='" +
                     obj.guid +
-                    "' src='" +
-                    that.checkEntityImage[model.get("guid")] +
-                    "'></div>";
-                }
-              }
+                    "' src='../../../img/tableItem.svg'></div>";
               return img + nameHtml;
             },
           }),
