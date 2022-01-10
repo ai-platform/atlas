@@ -87,6 +87,7 @@ header.atlas-header {
     height: calc(100vh - 63px);
     overflow: auto;
     // padding-top: 15px !important;
+    border-radius: 4px;
     padding-bottom: 10px !important;
     background: #FFFFFF;
 
@@ -95,7 +96,7 @@ header.atlas-header {
     }
 }
 .viewPane{
-   
+    border-radius: 4px;
     background-color: white;
 }
 
@@ -341,6 +342,7 @@ hr[size="10"] {
     padding-left: 0px !important;
 }
 
+
 .no-padding-right {
     padding-right: 0px !important;
 }
@@ -381,7 +383,8 @@ hr[size="10"] {
     margin-top: 15px;
     border-top: 1px solid #F2F2F2;
     padding-top: 22px;
-    padding-right: 16px
+    padding-right: 16px;
+    width:100%;
 }
 
 .ellipsis-with-margin {
