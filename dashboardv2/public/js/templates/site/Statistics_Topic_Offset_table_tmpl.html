@@ -15,19 +15,19 @@
  * limitations under the License.
 -->
 <thead>
-    <tr>
-        <th>Kafka Topic-Partition</th>
-        <th>Start Offset</th>
-        <th>Current Offset</th>
-        <th>Processed</th>
-        <th>Failed</th>
-        <th>Last Message Processed Time</th>
+    <tr style="outline: 1px solid #F2F2F2">
+        <th class="tableHeadingsStats">Kafka Topic-Partition</th>
+        <th class="tableHeadingsStats">Start Offset</th>
+        <th class="tableHeadingsStats">Current Offset</th>
+        <th class="tableHeadingsStats">Processed</th>
+        <th class="tableHeadingsStats">Failed</th>
+        <th class="tableHeadingsStats">Last Message Processed Time</th>
     </tr>
 </thead>
 {{#if data}}
-<tbody>
+<tbody style="outline: 1px solid #F2F2F2">
     {{#each tableCol}}
-    <tr>
+    <tr style="outline: 1px solid #F2F2F2">
         <td>{{{this.label}}}</td>
         {{#each ../tableHeader}}
         <td>{{callmyfunction ../../getTmplValue ../this this}}</td>

@@ -21,19 +21,13 @@
         </div>
     </div>
     <pre class="successStatus hide">Migration is <span class="color">successful</span>. To exit form migration mode, please remove <span class="color">atlas.migration.data.filename</span> property and restart Atlas.</pre>
-    <div class="refresh-container statisticsRefresh" data-id="statisticsRefresh">
-        <button type="button" class="btn fa fa-refresh pull-right btn-sm btn-action" title="Refresh Data"></button>
-    </div>
 </div>
 <div class="panel-group server-stats-container statsContainer hide col-md-12" id="accordion">
     <div class="panel panel-default custom-panel expand_collapse_panel-icon" data-id="entity">
         <div class="panel-heading" data-toggle="collapse" href="#entityCountCollapse" aria-expanded="true">
             <h4 class="panel-title">
-                <a>Entities <span class="count">(0)</span></a>
+                <a class="modelHeaders" style="color: black;">Entities <span class="count">(0)</span></a>
             </h4>
-            <div class="btn-group pull-left">
-                <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
-            </div>
         </div>
         <div id="entityCountCollapse" class="panel-collapse collapse in">
             <div class="panel-body">
@@ -50,22 +44,19 @@
     <div class="panel panel-default custom-panel expand_collapse_panel-icon" data-id="classification">
         <div class="panel-heading" data-toggle="collapse" href="#classificationCountCollapse" aria-expanded="true">
             <h4 class="panel-title">
-                <a>Classifications <span class="count">(0)</span></a>
+                <a class="modelHeaders" style="color: black;">Classifications <span class="count">(0)</span></a>
             </h4>
-            <div class="btn-group pull-left">
-                <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
-            </div>
         </div>
         <div id="classificationCountCollapse" class="panel-collapse collapse in">
             <div class="panel-body">
                 <table class="table stat-table classificationTable">
                     <thead>
-                        <tr>
-                            <th class="">Name</th>
-                            <th class="">Count <span class="count">(0)</span></th>
+                        <tr style="outline: 1px solid #F2F2F2">
+                            <th class="tableHeadingsStats">Name</th> 
+                            <th class="tableHeadingsStats">Count <span class="count">(0)</span></th>
                         </tr>
                     </thead>
-                    <tbody data-id="classification-card">
+                    <tbody style="outline: 1px solid #F2F2F2" data-id="classification-card">
                         <tr class="empty text-center">
                             <td colspan="3"><span>No records found!</span></td>
                         </tr>
@@ -77,21 +68,18 @@
     <div class="panel panel-default custom-panel expand_collapse_panel-icon" data-id="stats">
         <div class="panel-heading" data-toggle="collapse" href="#serverDetailcollapse" aria-expanded="true">
             <h4 class="panel-title">
-                <a>Server Statistics </a>
+                <a class="modelHeaders" style="color: black;">Server Statistics </a>
             </h4>
-            <div class="btn-group pull-left">
-                <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
-            </div>
         </div>
         <div id="serverDetailcollapse" class="panel-collapse collapse in">
             <div class="panel-body">
                 <div class="col-sm-12">
                     <div class="card-container panel panel-primary">
-                        <div class="panel-heading">Server Details</div>
+                        <div class=" tableHeadingsStats">Server Details</div>
                         <div class="panel-body">
                             <table class="table stat-table">
-                                <tbody data-id="server-card">
-                                    <tr class="empty text-center">
+                                <tbody style="outline: 1px solid #F2F2F2" data-id="server-card">
+                                    <tr style="outline: 1px solid #F2F2F2" class="empty text-center">
                                         <td colspan="2"><span>No records found!</span></td>
                                     </tr>
                                 </tbody>
@@ -128,17 +116,14 @@
     <div class="panel panel-default custom-panel expand_collapse_panel-icon" data-id="systemDetails">
         <div class="panel-heading" data-toggle="collapse" href="#systemDetailCollapse" aria-expanded="false">
             <h4 class="panel-title">
-                <a>System Details</a>
+                <a class="modelHeaders" style="color: black;">System Details</a>
             </h4>
-            <div class="btn-group pull-left">
-                <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
-            </div>
         </div>
         <div id="systemDetailCollapse" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="col-sm-6">
                     <div class="card-container panel panel-primary">
-                        <div class="panel-heading">OS</div>
+                        <div class="tableHeadingsStats">OS</div>
                         <div class="panel-body">
                             <table class="table stat-table">
                                 <tbody data-id="os-card">
@@ -152,7 +137,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="card-container panel panel-primary">
-                        <div class="panel-heading">Runtime</div>
+                        <div class="tableHeadingsStats">Runtime</div>
                         <div class="panel-body">
                             <table class="table stat-table">
                                 <tbody data-id="runtime-card">
@@ -166,7 +151,7 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="card-container panel panel-primary">
-                        <div class="panel-heading">Memory</div>
+                        <div class="tableHeadingsStats">Memory</div>
                         <div class="panel-body">
                             <table class="table stat-table memory-details">
                                 <tbody data-id="memory-card">
