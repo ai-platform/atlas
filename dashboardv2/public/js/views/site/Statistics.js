@@ -94,6 +94,14 @@ define(['require',
                         showFooter: true,
                         allowCancel: false,
                         width: "60%",
+                        headerButtons: [{
+                            title: "Refresh Data",
+                            btnClass: "fa fa-refresh",
+                            onClick: function() {
+                                modal.$el.find('.header-button .fa-refresh').tooltip('hide').prop('disabled', true).addClass('fa-spin');
+                                that.fetchMetricData({ update: true });
+                            }
+                        }]
                     });
                     modal.on('closeModal', function() {
                         modal.trigger('cancel');
