@@ -15,12 +15,14 @@
  * limitations under the License.
 -->
 {{#if isAttributeRelationView}}
+
 <div data-id="wizard">
-    <h3>Select Term</h3>
+    
+    <h3> <span><img style="margin-right: 12px;" src="img/dot.svg" alt=""></span><span><img style="margin-right: 2px;" src="img/Bar.svg" alt=""></span>Select Term</h3>
     <section>
         <div id="r_glossaryTree"></div>
     </section>
-    <h3>Attributes</h3>
+    <h3 >  <span><img style="margin-right: 12px;" src="img/dot.svg" alt=""></span>Attributes</h3>
     <section>
         <form name="termAttributeForm" class="form-horizontal" data-id="termAttributeForm">
             {{#each selectedTermAttributeList}}
