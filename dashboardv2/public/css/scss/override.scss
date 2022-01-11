@@ -237,13 +237,19 @@
 .searchTabRefreshBtn{
     padding: 0;
 }
-.searchTabRefreshBtn:hover{
-    filter: invert(28%) sepia(27%) saturate(3520%) hue-rotate(307deg) brightness(85%) contrast(89%);
-   img{
-    //color: invert(100%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(108%) contrast(102%);
-   }
-    
-}
+
+  svg:hover {
+    //fill: #C53E6C;
+    background-color: #A53159;
+    border-radius: 4px;
+    path{
+    fill: white;
+    }
+  }
+  path{
+      fill: #686868;
+  }
+  
 .searchTabFilterBtn{
     padding: 0;
 }
