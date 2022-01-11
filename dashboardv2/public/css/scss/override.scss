@@ -439,6 +439,7 @@ div.columnmanager-visibilitycontrol {
     }
 }
 
+
 div.columnmanager-dropdown-container {
     .columnmanager-dropdown-item {
         padding: 10px 16px;
@@ -664,18 +665,20 @@ div.columnmanager-dropdown-container {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background-color: $white;
+    border: 2px solid #686868;
     border-radius: 4px;
   }
   
   /* On mouse-over, add a grey background color */
   .main:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: $white;
   }
   
   /* When the checkbox is checked, add a blue background */
   .main input:checked ~ .checkmark {
-    background-color: $color_rcp_primary;
+    background-color: $color_rcp_secondary;
+    border:2px solid $color_rcp_secondary ;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -692,13 +695,13 @@ div.columnmanager-dropdown-container {
   
   /* Style the checkmark/indicator */
   .main .checkmark:after {
-    left: 8px;
-top: 4px;
-width: 5px;
-height: 10px;
-border: solid white;
-/* border-radius: 4px; */
-border-width: 0 1px 1px 0;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    /* border-radius: 4px; */
+    border-width: 0 1px 1px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -712,3 +715,4 @@ border-width: 0 1px 1px 0;
   }
  
 }
+

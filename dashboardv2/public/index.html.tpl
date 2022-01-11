@@ -30,7 +30,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
-    <title>Atlas</title>
+    <title>Data Realm</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript">
