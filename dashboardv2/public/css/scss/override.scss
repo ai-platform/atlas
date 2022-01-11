@@ -705,3 +705,8 @@ border-width: 0 1px 1px 0;
   }
  
 }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: white;
+    background-color: $color_rcp_primary;
+}
