@@ -16,6 +16,7 @@
 -->
 <div>
     <div class="form-group hide">
+        <label class="labels">Classification Type</label>
         <div class="row modalHeight">
             <div class="form-group col-md-12">
                 {{#if tagModel}}
@@ -31,7 +32,7 @@
                     <label class="main"><b>Propagate</b>
                         <input type="checkbox" data-id="checkModalTagProperty" class="input" checked /> <span class="checkmark"></span> </label>
                 </div>
-                <div style="margin-left: 145px;margin-top: -25px;" class="inline checkboxcustomstyles tableFilterCheckbox" data-id="removePropagationOnEntityDeleteBox">
+                <div style="margin-left: 145px;margin-top: -25px !important;" class="inline checkboxcustomstyles tableFilterCheckbox" data-id="removePropagationOnEntityDeleteBox">
                     <label class="main"><b>Remove propagation on entity delete</b>
                         <input type="checkbox" data-id="removePropagationOnEntityDelete" class="input" title="Propagated classification are removed during entity delete" /><span class="checkmark"></span> </label>
                 </div>
@@ -44,15 +45,16 @@
             </div>
         </div>
     </div>
-    <div class="row modalHeight" style="display: none;" data-id="timeZoneDiv">
-        <hr>
-        <div class="col-sm-12">
-            <div class="clearfix form-group">
-                <button type="button" class="btn btn-action btn-sm pull-right" data-id="addTimezoneParms"><i class="fa fa-plus"></i> Add Validity Period</button>
-            </div>
-            <div class="panel panel-default" data-id="validityPeriodBody" style="display: none;">
-                <div class="panel-body" data-id="addTimezoneDiv">
+    <div class="row modalHeight" style="display: table;" data-id="timeZoneDiv">
+
+        <div class="col-sm-12" style="box-sizing: border-box;">
+            
+            <div class="panel panel-default" data-id="validityPeriodBody" style="display: none;border:none;box-sizing: border-box;">
+                <div class="panel-body"  data-id="addTimezoneDiv">
                 </div>
+            </div>
+            <div class="clearfix form-group btn-add-time">
+                <button type="button" class="btn btn-action btn-sm pull-right" data-id="addTimezoneParms"><i class="fa fa-plus"></i> Add Validity Period</button>
             </div>
         </div>
     </div>

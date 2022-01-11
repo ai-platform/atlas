@@ -30,7 +30,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
-    <title>Atlas</title>
+    <title>Data Realm</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript">
@@ -44,8 +44,8 @@
         window.location.replace(indexpath);
     }
     </script>
-    <link rel="shortcut icon" href="img/favicon.ico?bust=<%- bust %>" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico?bust=<%- bust %>" type="image/x-icon" />
+  <!--  <link rel="shortcut icon" href="img/favicon.ico?bust=<%- bust %>" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico?bust=<%- bust %>" type="image/x-icon" /> -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" type="text/css" href="css/animate.min.css?bust=<%- bust %>" />
     <link rel="stylesheet" href="js/libs/backgrid/css/backgrid.css?bust=<%- bust %>">

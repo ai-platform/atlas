@@ -260,6 +260,7 @@ button {
         margin: 0px 3px 3px 0px;
         display: inline-block;
     }
+    
 }
 
 .btn-fixed-width {
@@ -557,4 +558,21 @@ button {
             top: -16px;
         }
     }
+}
+.btn-add-time{
+    float: left;
+.btn-action {
+    border: none;
+}  
+}
+.labels{
+    font-family: Rakuten Sans UI;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+padding-left: 16px;
+}
+.form-control .start-time{
+    background: none;
 }
