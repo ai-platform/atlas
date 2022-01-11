@@ -71,7 +71,7 @@ define(['require',
             },
             onRender: function() {
                 var that = this,
-                    tzstr = '<option selected="selected" disabled="disabled">-- Select Timezone --</option>',
+                    tzstr = '<option selected="selected" disabled="disabled">Time zone</option>',
                     dateConfig = {
                         "singleDatePicker": true,
                         "showDropdowns": true,
