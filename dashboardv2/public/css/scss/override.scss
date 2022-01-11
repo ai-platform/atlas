@@ -721,4 +721,8 @@ div.columnmanager-dropdown-container {
   }
  
 }
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: white;
+    background-color: $color_rcp_primary;
+}
 
