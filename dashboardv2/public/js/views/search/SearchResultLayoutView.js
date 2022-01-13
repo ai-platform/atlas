@@ -653,9 +653,9 @@ define([
               that.pageFrom = that.pageTo - that.limit + 1;
             }
             that.ui.pageRecordText.html(
-              "Displaying  <u>" +
+              "Displaying " +
                 that.searchCollection.models.length +
-                " records</u> From " +
+                " runs From " +
                 that.pageFrom +
                 " - " +
                 that.pageTo
