@@ -20,7 +20,9 @@
     </div>
     <div data-id="details" class="clearfix form-horizontal col-sm-12" >
         <h1 class="row title"><span data-id="title"></span></h1>
-        <button type="button" data-id="editButton" class="btn btn-sm btn-action pull-right"><i class="fa fa-pencil"></i></button>
+        <button type="button" data-id="editButton" class="btn-sm pull-right rcp-icon-btn-edit glossaryTabPlusBtn"><div class="edit_button_class"><svg width="20px" height="20px"><path class="edit_button" d="M17.1334 4.10641C17.6222 4.59516 17.6222 5.38766 17.1334 5.87641L16.2322 6.77766L15.3478 5.89391L16.249 4.99266L13.7572 2.50078L12.8559 3.40203L11.9722 2.51828L12.8734 1.61703C13.3622 1.12766 14.1547 1.12766 14.6434 1.61703L17.1334 4.10641ZM4.76313 11.8286L6.92188 13.9867L4.14626 14.6036L4.76313 11.8286ZM7.97251 13.2698L5.48001 10.7773L11.0875 5.16984L13.58 7.66172L7.97251 13.2698ZM15.3481 7.66172L14.4637 6.77797L11.0912 3.40422L11.0881 3.40234L3.71687 10.773L2.5 16.2498L7.97687 15.033L15.3481 7.66172ZM17.5 18.75H2.5V17.5H17.5V18.75Z"></path></svg></div></button>
+
+        <!-- <button type="button" data-id="editButton" class="btn btn-sm btn-action pull-right"><i class="fa fa-pencil"></i></button> -->
         <div class="form-group clearfix">
             <span class="pull-left text-muted">Short Description:&nbsp;</span>
             <div class="pull-left">
@@ -35,19 +37,21 @@
         </div>
         {{#if isTermView}}
         <div class="form-group clearfix" style="display: table;float: right;">
-            <span style="display: table; margin-top: -84px;margin-right: 60px;" class="control-label-sm-pr ">Classifications:</span>
+            <span style="display: table; margin-top: -84px;margin-right: 67px;" class="control-label-sm-pr ">Classifications:</span>
             <div style="display: table; flex-direction: column;float: right;margin-top: -26px;margin-right: 38px;"  data-id="tagListTerm" style="margin-top: -84px;margin-right: -80px;">
-                <button class="btn btn-action btn-sm" title="Add Classification" data-id="addTagTerm">
-                    <i class="fa fa-plus"> </i>
+                <button class="rcp-icon-btn glossaryTabPlusBtn" title="Add Classification" data-id="addTagTerm" style="margin-left: 2px;">
+                    <svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg>
                 </button>
             </div>
         </div>
         <div class="form-group clearfix" style="display: table; flex-direction: column;float: right;">
-            <span style="display: table; justify-content: flex-start;margin-top: -84px;margin-right: 80px;" class="control-label-sm-pr ">Categories:</span>
+            <span style="display: table; justify-content: flex-start;margin-top: -84px;margin-right: 87px;" class="control-label-sm-pr ">Categories:</span>
             <div style="display: table; flex-direction: column;float: right;margin-top: -26px;margin-right: 58px;"  data-id="categoryList" style="margin-top: -84px;margin-right: -80px;">
-                <button class="btn btn-action btn-sm" title="Add Category" data-id="addCategory">
-                    <i class="fa fa-plus"> </i>
+                <button class="rcp-icon-btn glossaryTabPlusBtn" title="Add Category" data-id="addCategory">
+                    <svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg>
                 </button>
+
+                
             </div>
         </div>
         <hr style="width: 100%;">
@@ -55,9 +59,11 @@
         <div class="form-group clearfix">
             <span class="control-label-sm-pr pull-left">Terms:</span>
             <div class="pull-left" data-id="termList">
-                <button class="btn btn-action btn-sm" title="Add Term" data-id="addTerm">
-                    <i class="fa fa-plus"> </i>
+                <button class="rcp-icon-btn glossaryTabPlusBtn" title="Add Term" data-id="addTerm">
+                    <svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg>
                 </button>
+                <!-- <button type="button" class="rcp-icon-btn glossaryTabPlusBtn" data-id="createGlossary" style="margin-left:38px;"><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg></button>
+            <button type="button" class="rcp-icon-btn glossaryTabPlusBtn"  title="Refresh" data-id="refreshGlossary" onclick="this.blur();" ><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M25.375 18C25.375 21.7906 22.2906 24.875 18.5 24.875C14.7094 24.875 11.625 21.7906 11.625 18C11.625 14.2094 14.7094 11.125 18.5 11.125C20.4325 11.125 22.2344 11.9275 23.5344 13.3313L21.9913 14.875H26V10.8662L24.4187 12.4475C22.885 10.8094 20.7681 9.875 18.5 9.875C14.02 9.875 10.375 13.52 10.375 18C10.375 22.48 14.02 26.125 18.5 26.125C22.98 26.125 26.625 22.48 26.625 18H25.375Z"></path></svg></button> -->
             </div>
         </div>
         {{/if}} {{#if isTermView}}

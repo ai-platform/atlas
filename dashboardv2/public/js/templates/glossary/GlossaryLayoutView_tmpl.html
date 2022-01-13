@@ -26,9 +26,14 @@
             <span class="pull-left">Category</span>
         </div>
         <div class="{{#if isAssignView}}col-sm-2{{else}}col-sm-5{{/if}} no-padding-right">
-            <button type="button" class="btn btn-action btn-md pull-right" title="Refresh" data-id="refreshGlossary" onclick="this.blur();" type="button"><i class="fa fa-refresh"></i></button>
-            <button type="button" class="btn btn-action btn-md pull-right" data-id="createGlossary" type="button"><i class="fa fa-plus"></i></button>
-            <!-- <div class="dropdown pull-right">
+            <button type="button" class="rcp-icon-btn glossaryTabPlusBtn" data-id="createGlossary" style="margin-left:38px;"><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg></button>
+            <button type="button" class="rcp-icon-btn glossaryTabPlusBtn"  title="Refresh" data-id="refreshGlossary" onclick="this.blur();" ><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M25.375 18C25.375 21.7906 22.2906 24.875 18.5 24.875C14.7094 24.875 11.625 21.7906 11.625 18C11.625 14.2094 14.7094 11.125 18.5 11.125C20.4325 11.125 22.2344 11.9275 23.5344 13.3313L21.9913 14.875H26V10.8662L24.4187 12.4475C22.885 10.8094 20.7681 9.875 18.5 9.875C14.02 9.875 10.375 13.52 10.375 18C10.375 22.48 14.02 26.125 18.5 26.125C22.98 26.125 26.625 22.48 26.625 18H25.375Z"></path></svg></button>
+            <!-- 
+                <div class="col-sm-3 filter-btn-wrapper">
+                <button type="button" class="btn pull-right typeLOV searchTabRefreshBtn rcp-icon-btn" title="Refresh" data-id="refreshBtn"><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M25.375 18C25.375 21.7906 22.2906 24.875 18.5 24.875C14.7094 24.875 11.625 21.7906 11.625 18C11.625 14.2094 14.7094 11.125 18.5 11.125C20.4325 11.125 22.2344 11.9275 23.5344 13.3313L21.9913 14.875H26V10.8662L24.4187 12.4475C22.885 10.8094 20.7681 9.875 18.5 9.875C14.02 9.875 10.375 13.52 10.375 18C10.375 22.48 14.02 26.125 18.5 26.125C22.98 26.125 26.625 22.48 26.625 18H25.375Z"></path></svg></button>
+            </div>
+                
+                <div class="dropdown pull-right">
                 <button type="button" data-toggle="dropdown" class="btn btn-action btn-md dropdown-toggle" type="button"><i class="fa fa-paperclip"></i></button>
                 <ul class="dropdown-menu">
                     <li><a href="{{importTmplUrl}}">Download Import template</a></li>
@@ -54,7 +59,7 @@
                     font-weight: 400;
                     padding-left: 16px;">Search Glossary</label>
                     <input type="text" style="    background-color: white;
-                    border: 1px black solid;
+                    border: 1px #9C9C9C solid;
                     color: black;" class="form-control glosLabel" data-id="searchTerm" placeholder="{{#if isAssignView}}Search Term{{else}}Search Glossary, Term{{/if}}">
                 </div>
                 <div data-id="termTree" style="margin-top: 5px;padding-bottom: 25px;overflow-x: auto;overflow-y:hidden;">
@@ -68,7 +73,7 @@
                     font-weight: 400;
                     padding-left: 16px;">Search Glossary</label>
                     <input type="text" style="background-color: white;
-                    border: 1px black solid;
+                    border: 1px #9C9C9C solid;
                     color: black;" class="form-control glosLabel" data-id="searchCategory" placeholder="{{#if isAssignView}}Search Catalog{{else}}Search Glossary, Category{{/if}}">
                 </div>
                 
