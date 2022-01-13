@@ -364,6 +364,8 @@ hr.hr-filter {
   }
   .searach-result-pagination{
     padding-left: 16px;
+    margin-top: 0;
+    padding-top: 16px;
   }
 }
 .selectColumnButton{
@@ -376,12 +378,23 @@ hr.hr-filter {
         font-size: 16px;
         color: #333333;
         background:$white;
-        width: 170px;
+        width: 302px;
         text-align: left;
         i{
             float: right;
             margin-top: 4px;
         }
+    }
+    button:hover{
+      color: #333333 !important;
+      background-color: $white !important;
+      i{
+        color: $color_rcp_secondary;
+      }
+    }
+    button:focus{
+      color: #333333 !important;
+      background-color: $white !important;
     }
 }
 
