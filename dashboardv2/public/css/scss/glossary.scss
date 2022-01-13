@@ -160,3 +160,11 @@ display: flex;
 align-items: center;
 color: #333333;
 }
+
+.jstree-default-dark .jstree-anchor {
+    text-shadow: none;
+}
+
+.body .current{
+    background: white;
+}
