@@ -432,16 +432,18 @@ div.columnmanager-visibilitycontrol {
   width: auto;
   margin-bottom: 5px;
 
-  &.open .btn-action {
-    background-color: $color_rcp_primary;
-    color: $white;
-  }
+    &.open .btn-action {
+        i{
+            color: $color_rcp_secondary;
+        }
+    }
 }
 
 div.columnmanager-dropdown-container {
-  .columnmanager-dropdown-item {
-    padding: 10px 16px;
-  }
+    .columnmanager-dropdown-item {
+        padding: 10px 16px;
+        width: 285px;
+    }
 
   &.open {
     overflow: auto;
