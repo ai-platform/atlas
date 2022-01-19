@@ -730,3 +730,76 @@ div.columnmanager-dropdown-container {
     outline: none !important;
     border: 1px solid $color_rcp_primary;
 }
+
+.modalStyle {
+    padding: 10px;   
+    border: 0.5px #F2F2F2 solid;  
+    align-items: center; 
+    justify-content: center;
+}
+
+.modalCloseButton {
+    margin-right: 20px; 
+    background-color: white;
+    color: gray;
+    border-color: white;
+}
+
+.modalSelector {
+    padding: 10px;   
+    border: 0.5px #F2F2F2 solid;
+}
+
+.selectorValues {
+    background-color: white; 
+    border: 1px black solid; 
+    color: black;
+}
+
+.modalLabel {
+    font-family: Rakuten Sans UI;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;    
+   color: #686868;
+   margin-bottom: 10px;
+   margin-left: 27px;
+}
+
+.labelSubheading {
+    font-family: Rakuten Sans UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.timeZoneView {
+    margin-right: -30px;
+}
+
+.headerIcons {
+    display: flex;flex:0.35; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 5px;
+}
+
+.headerLogo {
+    flex: 0.9;  
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin-left: 10px;
+}
+
+.headerTextView {
+    display: flex; 
+    width: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Rakuten Sans UI;
+}
