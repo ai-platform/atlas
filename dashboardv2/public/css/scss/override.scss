@@ -432,18 +432,18 @@ div.columnmanager-visibilitycontrol {
   width: auto;
   margin-bottom: 5px;
 
-    &.open .btn-action {
-        i{
-            color: $color_rcp_secondary;
-        }
+  &.open .btn-action {
+    i {
+      color: $color_rcp_secondary;
     }
+  }
 }
 
 div.columnmanager-dropdown-container {
-    .columnmanager-dropdown-item {
-        padding: 10px 16px;
-        width: 285px;
-    }
+  .columnmanager-dropdown-item {
+    padding: 10px 16px;
+    width: 285px;
+  }
 
   &.open {
     overflow: auto;
@@ -732,8 +732,8 @@ div.columnmanager-dropdown-container {
   //margin-left: 36px;
   border-radius: 4px;
 }
-.rcp-icon-btn-edit{
-    background-color: white;
+.rcp-icon-btn-edit {
+  background-color: white;
   border: none;
   height: 35.7px;
   //margin-left: 36px;
@@ -753,79 +753,82 @@ path {
 }
 
 .modalStyle {
-    padding: 10px;   
-    border: 0.5px #F2F2F2 solid;  
-    align-items: center; 
-    justify-content: center;
+  padding: 10px;
+  border: 0.5px #f2f2f2 solid;
+  align-items: center;
+  justify-content: center;
 }
 
 .modalCloseButton {
-    margin-right: 20px; 
-    background-color: white;
-    color: gray;
-    border-color: white;
+  margin-right: 20px;
+  background-color: white;
+  color: gray;
+  border-color: white;
 }
 
 .modalSelector {
-    padding: 10px;   
-    border: 0.5px #F2F2F2 solid;
+  padding: 10px;
+  border: 0.5px #f2f2f2 solid;
 }
 
 .selectorValues {
-    background-color: white; 
-    border: 1px black solid; 
-    color: black;
+  background-color: white;
+  border: 1px black solid;
+  color: black;
 }
 
 .modalLabel {
-    font-family: Rakuten Sans UI;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 12px;
-   line-height: 16px;    
-   color: #686868;
-   margin-bottom: 10px;
-   margin-left: 27px;
+  font-family: Rakuten Sans UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #686868;
+  margin-bottom: 10px;
+  margin-left: 27px;
 }
 
 .labelSubheading {
-    font-family: Rakuten Sans UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
+  font-family: Rakuten Sans UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
 }
 
 .timeZoneView {
-    margin-right: -30px;
+  margin-right: -30px;
 }
 
 .headerIcons {
-    display: flex;flex:0.35; 
-    align-items: center; 
-    justify-content: center; 
-    margin-left: 5px;
+  display: flex;
+  flex: 0.35;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
 
 .headerLogo {
-    flex: 0.9;  
-    display: flex;
-    align-items: flex-start; 
-    justify-content: center; 
-    flex-direction: column; 
-    margin-left: 10px;
+  flex: 0.9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .headerTextView {
-    display: flex; 
-    width: 100%; 
-    align-items: center; 
-    justify-content: center; 
-    font-family: Rakuten Sans UI;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: Rakuten Sans UI;
 
-.edit_button:hover{
+  .edit_button:hover {
     fill: #a53159 !important ;
-}
-.edit_button_class:hover{
+  }
+  .edit_button_class:hover {
     background-color: none !important;
+  }
+}
