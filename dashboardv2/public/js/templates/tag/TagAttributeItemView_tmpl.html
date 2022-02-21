@@ -15,12 +15,12 @@
  * limitations under the License.
 -->
 <div class="form-group clearfix">
-    <div class="col-sm-7">
-        <input class="form-control attributeInput" data-id="attributeInput" placeholder="Attribute name">
+    <div class="col-sm-7 modalSelector">
+        <input class="form-control attributeInput" data-id="attributeInput" placeholder="Attribute name" style="background-color: white; border: 1px black solid; color: black;">
         </input>
     </div>
-    <div class="col-sm-3">
-        <select class="form-control dataTypeSelector" data-id="dataTypeSelector">
+    <div class="col-sm-3 modalSelector">
+        <select class="form-control dataTypeSelector" data-id="dataTypeSelector" style="background-color: white; border: 1px black solid; color: black;">
             <option selected="selected">string</option>
             <option>boolean</option>
             <option>byte</option>
@@ -31,7 +31,7 @@
             <option>date</option>
         </select>
     </div>
-    <div class="col-sm-2 attributePlusData" align="right">
-        <button type="button" class="btn btn-danger btn-sm closeInput" data-id="close"><i class="fa fa-times"></i></button>
+    <div class="col-sm-2 attributePlusData modalStyle" align="right">
+        <button type="button" class="btn btn-danger btn-sm closeInput modalCloseButton" data-id="close"><img src="img/closeIcon.svg" width="20px" height="20px" class="close closeIcon"></button>
     </div>
 </div>

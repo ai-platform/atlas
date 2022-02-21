@@ -25,8 +25,10 @@
             <span class="pull-left">Tree</span>
         </div>
         <div class="col-sm-6 no-padding-right">
-            <button type="button" class="btn btn-action btn-md pull-right" title="Refresh" data-id="refreshTag" onclick="this.blur();" type="button"><i class="fa fa-refresh"></i></button>
-            <button type="button" class="btn btn-action btn-md pull-right" data-id="createTag" type="button"><i class="fa fa-plus"></i></button>
+            <button  type="button" class="btn pull-right typeLOV searchTabRefreshBtn rcp-icon-btn" title="Refresh" data-id="refreshTag" onclick="this.blur();" type="button"><svg viewBox="1 0 34 34" height="34px" width="34px"><path d="M25.375 18C25.375 21.7906 22.2906 24.875 18.5 24.875C14.7094 24.875 11.625 21.7906 11.625 18C11.625 14.2094 14.7094 11.125 18.5 11.125C20.4325 11.125 22.2344 11.9275 23.5344 13.3313L21.9913 14.875H26V10.8662L24.4187 12.4475C22.885 10.8094 20.7681 9.875 18.5 9.875C14.02 9.875 10.375 13.52 10.375 18C10.375 22.48 14.02 26.125 18.5 26.125C22.98 26.125 26.625 22.48 26.625 18H25.375Z"></path></svg></button>
+            <button style=" margin-right: 10px; " type="button" class="btn pull-right typeLOV active searchTabFilterBtn rcp-icon-btn" title="Create Classification" data-id="createTag" type="button"><svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z" />
+                </svg></button>
         </div>
     </div>
 </div>
@@ -36,11 +38,11 @@
     </div>
     <div data-id="tagTreeView">
         <div class="list-view col-sm-12">
-            <input type="text" class="form-control" data-id="offlineSearchTag" placeholder="Search Classification">
+            <input style="border-width: 1px; border-color: #686868; margin-top: 10px;" type="text" class="form-control" data-id="offlineSearchTag" placeholder="Search Classification">
             <ul class="tag-tree" data-id="tagsList">
             </ul>
         </div>
-        <div class="tree-view col-sm-12" style="display: none;">
+        <div class="tree-view col-sm-12" style="display: none; margin-top: 10px;">
             <div class="treeLov">
                 <select class="form-control" data-id="treeLov"></select>
             </div>

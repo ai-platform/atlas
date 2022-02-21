@@ -107,7 +107,7 @@ $color_falu_red_approx: #8a1f11;
                 margin-bottom: 10px;
 
                 >li {
-                    width: 25%;
+                    width: 35%;
                     float: left;
 
                     &:first-child>a {
@@ -389,4 +389,62 @@ $color_falu_red_approx: #8a1f11;
             }
         }
     }
+}
+
+.wizard > .actions ul[role="menu"] li.disabled a {
+margin-right: 290px;
+}
+.wizard > .actions ul[role="menu"] li a {
+//margin-right: 279px;
+
+}
+.wizard-modal .wizard .actions > ul > li{
+//margin-right: 290px;
+}
+
+.wizard > .steps .number {
+display: none;
+}
+.wizard > .steps > ul > li:first-child > a {
+padding-left: 18px;
+}
+
+.wizard > .steps > ul > li.current a {
+background-color: transparent;
+color:#90003B ;
+padding-left: 18px;
+
+
+}
+
+.wizard > .steps > ul {
+background-color: transparent;
+}
+.wizard > .steps > ul > li.current a:after {
+     //border-left: 30px solid #C53E6C; 
+    display: none;
+}
+
+.wizard > .steps > ul > li a:before {
+display: none;
+}
+
+.wizard > .steps > ul > li.disabled a{
+    background: transparent;
+padding-left: 18px;
+
+}
+.wizard > .steps > ul > li.done a{
+    background-color: transparent;
+    color:#90003B ;
+padding-left: 18px;
+
+
+}
+.wizard > .steps > ul > li.done a:after{
+    display: none;
+}
+
+.wizard > .steps > ul > li a:after{
+    display: none;
 }

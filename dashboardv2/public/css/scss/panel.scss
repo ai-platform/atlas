@@ -40,6 +40,9 @@
             &.active {
                 >a {
                     color: $color_rcp_primary;
+                    //border_bottom: 1px solid $color_mystic_approx;
+                border-bottom: 1px solid #C53E6C;
+                //border-bottom-color: transparent;
                 }
             }
 
@@ -157,3 +160,4 @@
 .panel-default.custom-panel>.panel-heading>.btn-group>button {
     color: $color_rcp_primary;
 }
+

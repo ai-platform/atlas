@@ -98,7 +98,7 @@ define(['require',
                     okText: okLabel,
                     allowCancel: true,
                     okCloses: false,
-                    width: '50%'
+                    width: '40%'
                 }).open();
                 this.modal.$el.find('button.ok').attr("disabled", true);
                 this.modal.on('ok', function(e) {
@@ -513,10 +513,10 @@ define(['require',
                 var value = object.value,
                     entityLabel = this.capitalize(_.escape(value.name));
 
-                return '<div class=" row ' + value.isOptional + '"><span class="col-sm-3">' +
-                    '<label><span class="' + (value.isOptional ? 'true' : 'false required') + '">' + entityLabel + '</span><span class="center-block ellipsis-with-margin text-gray" title="Data Type : ' + value.typeName + '">' + '(' + _.escape(value.typeName) + ')' + '</span></label></span>' +
-                    '<span class="col-sm-9">' + (this.getElement(object)) +
-                    '</input></span></div>';
+                return '<div style="margin-top: 10px;"> <div class=" row ' + value.isOptional + ' " style="display: grid;"><span class="col-sm-12">' +
+                    '<label style="display: -webkit-box;"><span class="' + (value.isOptional ? 'true' : 'false required') + '" style="font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;">' + entityLabel + '</span><span class="center-block ellipsis-with-margin text-gray" style="display: inline; font-family: Rakuten Sans UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;color: #686868;margin-top: 3px; margin-left: 2px" title="Data Type : ' + value.typeName + '">' + '(' + _.escape(value.typeName) + ')' + '</span></label></span>' +
+                    '<span class="col-sm-12">' + (this.getElement(object)) +
+                    '</input></span></div></div>';
             },
             getFieldElementContainer: function(object) {
                 var htmlField = object.htmlField,
@@ -524,7 +524,7 @@ define(['require',
                     relationshipType = object.relationshipType ? object.relationshipType : false,
                     alloptional = object.alloptional,
                     typeOfDefination = (relationshipType ? "Relationships" : "Attributes");
-                return '<div class="attribute-dash-box ' + (alloptional ? "alloptional" : "") + ' "><span class="attribute-type-label">' + (typeOfDefination) + '</span>' + htmlField + '</div>';
+                return '<div class="' + (alloptional ? "alloptional" : "") + ' ">' + htmlField + '</div>';
             },
             getSelect: function(object) {
                 var value = object.value,
@@ -533,7 +533,7 @@ define(['require',
                     isAttribute = object.isAttribute,
                     isRelation = object.isRelation;
                 if (value.typeName === "boolean") {
-                    return '<select class="form-control row-margin-bottom ' + (value.isOptional === true ? "false" : "true") +
+                    return '<select style="background-color:white; outline: solid;outline-width: 1px;outline-color: #9C9C9C;" class="form-control row-margin-bottom ' + (value.isOptional === true ? "false" : "true") +
                         '" data-type="' + value.typeName +
                         '" data-attribute="' + isAttribute +
                         '" data-relation="' + isRelation +
@@ -548,7 +548,7 @@ define(['require',
                     } else {
                         splitTypeName = value.typeName;
                     }
-                    return '<select class="form-control row-margin-bottom entityInputBox ' + (value.isOptional === true ? "false" : "true") +
+                    return '<select style="background-color:white; outline: solid;outline-width: 1px;outline-color: #9C9C9C;" class="form-control row-margin-bottom entityInputBox ' + (value.isOptional === true ? "false" : "true") +
                         '" data-type="' + value.typeName +
                         '" data-attribute="' + isAttribute +
                         '" data-relation="' + isRelation +
@@ -573,7 +573,7 @@ define(['require',
                     }
                 } catch (err) {}
 
-                return '<textarea class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
+                return '<textarea style="background: #FFFFFF;box-sizing: border-box;border-radius: 4px; outline: solid;outline-width: 1px;outline-color: #9C9C9C;" class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
                     ' data-type="' + value.typeName + '"' +
                     ' data-key="' + name + '"' +
                     ' data-attribute="' + isAttribute + '"' +
@@ -588,7 +588,7 @@ define(['require',
                     entityValue = _.escape(object.entityValue),
                     isAttribute = object.isAttribute,
                     isRelation = object.isRelation;
-                return '<input class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
+                return '<input style="background: #FFFFFF;box-sizing: border-box;border-radius: 4px; outline: solid;outline-width: 1px;outline-color: #9C9C9C;" class="form-control entityInputBox ' + (value.isOptional === true ? "false" : "true") + '"' +
                     ' data-type="' + value.typeName + '"' +
                     ' value="' + entityValue + '"' +
                     ' data-key="' + name + '"' +

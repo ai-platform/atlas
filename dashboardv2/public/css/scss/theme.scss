@@ -87,16 +87,16 @@ header.atlas-header {
     height: calc(100vh - 63px);
     overflow: auto;
     // padding-top: 15px !important;
+    border-radius: 4px;
     padding-bottom: 10px !important;
     background: #FFFFFF;
 
-    
     &>div {
         height: 100%;
     }
 }
 .viewPane{
-   
+    border-radius: 4px;
     background-color: white;
 }
 
@@ -161,7 +161,7 @@ header.atlas-header {
     
     .title {
         padding-top: 0;
-        margin-left: 2px;
+        margin-left: 0px;
     }
 
     h1 {
@@ -342,6 +342,7 @@ hr[size="10"] {
     padding-left: 0px !important;
 }
 
+
 .no-padding-right {
     padding-right: 0px !important;
 }
@@ -380,6 +381,10 @@ hr[size="10"] {
 
 .pagination-box {
     margin-top: 15px;
+    border-top: 1px solid #F2F2F2;
+    padding-top: 22px;
+    padding-right: 16px;
+    width:100%;
 }
 
 .ellipsis-with-margin {

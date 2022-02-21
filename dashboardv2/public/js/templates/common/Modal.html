@@ -18,15 +18,20 @@
     <div class="modal-content">
         {{#if title}}
         <div class="modal-header">
-            <img src="img/closeIcon.svg" width="20px" height="20px" class="close closeIcon"></img>
+            <img src="img/closeIcon.svg" width="20px" height="20px" class="close closeIcon" style="margin-top: 2px;"></img>
             {{#if headerButtons}}
-            <div class="header-button">
+            <div class="header-button" style="margin-bottom: -6px;">
                 {{#each headerButtons}}
                 <button type="button" data-index={{@index}} {{#if this.title}} title="{{this.title}}" {{/if}} class="btn {{this.btnClass}}">{{this.text}}</button>
                 {{/each}}
             </div>
             {{/if}}
-            <h4 class="modal-title">
+            <h4 class="modal-title" style="
+            font-family: Rakuten Sans UI;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333333;">
                 {{#if titleHtml}}
                 {{{tt title}}}
                 {{else}}
