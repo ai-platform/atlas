@@ -20,15 +20,7 @@
 <form name="tagDefinitionform" class="hide form-horizontal" data-id="createTagForm">
     <div class="form-group" style="display: flex; flex-direction: column;">
         <div style="display: flex; justify-content: flex-start;">
-            <label style="font-family: Rakuten Sans UI;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #686868;
-        margin-bottom: 10px;
-        margin-left: 27px;
-        " for="name">Name</label>
+            <label class="modalLabel" for="name">Name</label>
         </div> 
         {{#if create}}
         <div class="col-sm-12">
@@ -38,15 +30,7 @@
         <span class="ellipsis-with-margin control-label text-left col-sm-10" data-id="title"></span> {{/if}}
     </div>
     <div class="form-group" style="display: flex; flex-direction: column;">
-        <label style="font-family: Rakuten Sans UI;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #686868;
-        margin-bottom: 10px;
-        margin-left: 27px;
-        "  for="description">Description</label>
+        <label class="modalLabel" for="description">Description</label>
         <div class="col-sm-12">
             <input class="form-control" data-id="description"  style="background-color: white; border: 1px #9C9C9C solid; color: black;" value="{{description}}" placeholder="Description(required)" />
         </div>
@@ -54,20 +38,8 @@
     {{#if create}}
     <div class="form-group">
         <div class="col-sm-12">
-            <label style="font-family: Rakuten Sans UI;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 20px;
-            color: #333333;">Select classification to inherit attributes(optional)</label>
-            <p class="text-gray" style="font-family: Rakuten Sans UI;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            margin-top: 12px;
-            margin-left: 13px;
-            color: #686868;">Attributes define additional properties for the classification</p>
+            <label class="labelSubheading">Select classification to inherit attributes(optional)</label>
+            <p class="text-gray" class="modalLabel">Attributes define additional properties for the classification</p>
             <select class="form-control" data-id="parentTagList" multiple="multiple"></select>
         </div>
     </div>
