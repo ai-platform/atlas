@@ -361,7 +361,8 @@ define(['require', 'utils/Utils', 'modules/Modal', 'utils/Messages', 'utils/Enum
         }
         if (!Enums.entityStateReadOnly[obj.status || obj.entityStatus]) {
             if (obj.guid) {
-                addTag += '<a href="javascript:void(0)" data-id="addTag" class="btn btn-action btn-sm assignTag" data-guid="' + obj.guid + '" ><i class="fa fa-plus"></i></a>';
+                    
+                    addTag += '<a href="javascript:void(0)" data-id="addTag" class=" assignTag" data-guid="' + obj.guid + '" > <svg style="border: 1px solid #9c9c9c;border-radius:4px" viewBox="1 0 34 34" height="34px" width="34px"><path d="M24 17.5H18.5V12H17.5V17.5H12V18.5H17.5V24H18.5V18.5H24V17.5Z"></path></svg>  </a>';
             } else {
                 addTag += '<a href="javascript:void(0)" data-id="addTag" class="btn btn-action btn-sm assignTag"><i style="right:0" class="fa fa-plus"></i></a>';
             }
