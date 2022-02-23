@@ -17,10 +17,10 @@
 /* override.scss */
 
 .tabs li.tab.active {
-  border-bottom: 2px solid $color_rcp_primary;
+  border-bottom: 2px solid #90003B;
 
   a {
-    color: $color_rcp_primary;
+    color: #90003B;
   }
 }
 
@@ -115,7 +115,8 @@
 }
 
 .modal-content {
-  border-radius: 10px;
+  border-radius: 4px;
+  // width: 692px;
 }
 
 .select2-container {
@@ -806,7 +807,7 @@ path {
   flex: 0.35;
   align-items: center;
   justify-content: center;
-  margin-left: 5px;
+  margin-left: 19px;
 }
 
 .headerLogo {
@@ -815,7 +816,7 @@ path {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .headerTextView {

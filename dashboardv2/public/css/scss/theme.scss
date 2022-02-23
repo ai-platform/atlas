@@ -24,7 +24,7 @@ body {
 
 header.atlas-header {
     background-color: $white;
-    border-bottom: 1px $color_mystic_approx solid;
+    border-bottom: 1px #F2F2F2 solid;
 
     table {
         width: 100%;
@@ -138,6 +138,7 @@ header.atlas-header {
 
 #sidebar-wrapper {
     background: $white;
+    overflow-y: hidden;
 
     #sideNav-wrapper {
         color: $color_ironside_gray_approx;;
