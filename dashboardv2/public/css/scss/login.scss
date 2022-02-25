@@ -16,128 +16,144 @@
  * limitations under the License.
  */
 
-@import "__variable.scss";
+ @import "__variable.scss";
 
-body {
-    font-family: $font_0, $font_1;
-    background-color: $color_white_lilac_approx;
-    color: $color_dark_grey_approx;
-    font-size: 14px;
-    line-height: 1.42857143;
-}
-
-.login-body {
-    height: 100vh;
-    padding-top: calc(50vh - 206px);
-
-    .login-form {
-        padding: 60px;
-        width: 500px;
-        margin: 0 auto;
-        background: $white;
-        box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.2);
-
-        h4 {
-            font-size: 16px;
-            margin-bottom: 24px;
-        }
-
-        img {
-            height: 65px;
-            padding: 6px;
-            margin-bottom: 28px;
-        }
-
-        .icon-group {
-            position: relative;
-            margin-bottom: 24px;
-
-            &.user:after {
-                content: "\f007";
-            }
-
-            &.password:after {
-                content: "\f023";
-            }
-
-            .show-password,
-            &:after {
-                position: absolute;
-                left: 4px;
-                bottom: 4px;
-                font-family: FontAwesome;
-                font-size: 16px;
-                background: transparent;
-                height: 34px;
-                width: 38px;
-                line-height: 34px;
-                text-align: center;
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
-                border-right: 1px solid #ccc;
-            }
-
-            &.text {
-                .show-password {
-                    color: $color_rcp_primary;
-                }
-            }
-
-            .show-password {
-                right: 4px;
-                border: none;
-                left: auto;
-                cursor: pointer;
-            }
-
-            input {
-                height: auto;
-                padding: 10px 12px 10px 52px;
-                background: transparent;
-                border-radius: 0px;
-                border-width: 1px;
-
-                &#password {
-                    padding-right: 37px
-                }
-
-                &:focus {
-                    border-image-source: $color_rcp_primary;
-                    border-width: 2px;
-                    border-image-slice: 5;
-                    border-image-source: -moz-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-                    border-image-source: -webkit-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-                    border-image-source: linear-gradient(135deg, $color_rcp_primary 0%, #4a90e2 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_rcp_primary', endColorstr='#4a90e2', GradientType=1);
-                    box-shadow: none;
-                    -webkit-box-shadow: none;
-                }
-            }
-        }
-
-        button.btn-login {
-            padding: 10px 12px;
-            background: $color_rcp_primary;
-            background: -moz-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-            background: -webkit-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-            background: linear-gradient(135deg, $color_rcp_primary 0%, #4a90e2 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_rcp_primary', endColorstr='#4a90e2', GradientType=1);
-            color: #fff;
-            margin-top: 32px;
-            border: none;
-
-            &:focus,
-            &:hover,
-            &:active,
-            &:active:focus,
-            &:active:hover {
-                background: $color_rcp_primary;
-                background: -moz-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-                background: -webkit-linear-gradient(-45deg, $color_rcp_primary 0%, #4a90e2 100%);
-                background: linear-gradient(135deg, $color_rcp_primary 0%, #4a90e2 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_rcp_primary', endColorstr='#4a90e2', GradientType=1);
-                color: #fff;
-            }
-        }
-    }
-}
+ body {
+   font-family: $font_0, $font_1;
+   background-color: $color_white_lilac_approx;
+   color: $color_dark_grey_approx;
+   font-size: 14px;
+   line-height: 1.42857143;
+ }
+ 
+ .login-body {
+   height: 100vh;
+   padding-top: calc(50vh - 206px);
+ 
+   .login-form {
+     padding: 60px;
+     width: 500px;
+     margin: 0 auto;
+     background: $white;
+     box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.2);
+ 
+     h4 {
+       font-size: 16px;
+       margin-bottom: 24px;
+       font-weight: 600;
+       text-align: center;
+     }
+ 
+     img {
+       height: 65px;
+       padding: 6px;
+       margin-bottom: 28px;
+     }
+ 
+     .icon-group {
+       position: relative;
+       margin-bottom: 24px;
+ 
+       &.user:after {
+         content: "\f007";
+       }
+ 
+       &.password:after {
+         content: "\f023";
+       }
+ 
+       .show-password,
+       &:after {
+         position: absolute;
+         left: 4px;
+         bottom: 4px;
+         font-family: FontAwesome;
+         font-size: 16px;
+         background: transparent;
+         height: 34px;
+         width: 38px;
+         line-height: 34px;
+         text-align: center;
+         border-top-left-radius: 4px;
+         border-bottom-left-radius: 4px;
+         border-right: 1px solid #ccc;
+       }
+ 
+       &.text {
+         .show-password {
+           color: $color_jungle_green_approx;
+         }
+       }
+ 
+       .show-password {
+         right: 4px;
+         border: none;
+         left: auto;
+         cursor: pointer;
+       }
+ 
+       input {
+         height: auto;
+         padding: 10px 12px 10px 52px;
+         background: transparent;
+         border-radius: 0px;
+         border-width: 1px;
+ 
+         &#password {
+           padding-right: 37px;
+         }
+ 
+         // &:focus {
+         //   border-image-source: #38bb9b;
+         //   border-width: 2px;
+         //   border-image-slice: 5;
+         //   border-image-source: -moz-linear-gradient(
+         //     -45deg,
+         //     #38bb9b 0%,
+         //     #4a90e2 100%
+         //   );
+         //   border-image-source: -webkit-linear-gradient(
+         //     -45deg,
+         //     #38bb9b 0%,
+         //     #4a90e2 100%
+         //   );
+         //   border-image-source: linear-gradient(
+         //     135deg,
+         //     #38bb9b 0%,
+         //     #4a90e2 100%
+         //   );
+         //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38bb9b', endColorstr='#4a90e2', GradientType=1);
+         //   box-shadow: none;
+         //   -webkit-box-shadow: none;
+         // }
+       }
+     }
+ 
+     button.btn-login {
+       padding: 10px 12px;
+       background: #c53e6c;
+     //   background: -moz-linear-gradient(-45deg, #38bb9b 0, #4a90e2 100%);
+       /* background: -webkit-linear-gradient(-45deg,#38bb9b 0,#4a90e2 100%); */
+       /* background: linear-gradient(135deg,#c53e6c 0,#4a90e2 100%); */
+       color: #fff;
+       margin-top: 32px;
+       border: none;
+ 
+       &:focus,
+       &:hover,
+       &:active,
+       &:active:focus,
+       &:active:hover {
+         // background: #38bb9b;
+         // background: -moz-linear-gradient(-45deg, #38bb9b 0%, #4a90e2 100%);
+         // background: -webkit-linear-gradient(-45deg, #38bb9b 0%, #4a90e2 100%);
+         // background: linear-gradient(135deg, #38bb9b 0%, #4a90e2 100%);
+         // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38bb9b', endColorstr='#4a90e2', GradientType=1);
+         color: #fff;
+         background: #c53e6c;
+ 
+       }
+     }
+   }
+ }
+ 
