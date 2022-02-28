@@ -98,7 +98,7 @@ function redirect(baseUrl) {
         url: baseUrl + "api/atlas/admin/session",
         success: function(data) {
             var PRIMARY_UI = "v2",
-                indexpath = "/n/index.html";
+                indexpath = "/index.html";
             // if (data && data["atlas.ui.default.version"]) {
             //     PRIMARY_UI = data["atlas.ui.default.version"];
             // }
