@@ -98,18 +98,18 @@ function redirect(baseUrl) {
         url: baseUrl + "api/atlas/admin/session",
         success: function(data) {
             var PRIMARY_UI = "v2",
-                indexpath = "/n/index.html";
-            if (data && data["atlas.ui.default.version"]) {
-                PRIMARY_UI = data["atlas.ui.default.version"];
-            }
-            if (PRIMARY_UI !== "v2") {
                 indexpath = "/index.html";
-            }
-            if (window.localStorage.last_ui_load === "v1") {
-                indexpath = "/index.html";
-            } else if (window.localStorage.last_ui_load === "v2") {
-                indexpath = "/n/index.html";
-            }
+            // if (data && data["atlas.ui.default.version"]) {
+            //     PRIMARY_UI = data["atlas.ui.default.version"];
+            // }
+            // if (PRIMARY_UI !== "v2") {
+            //     indexpath = "/index.html";
+            // }
+            // if (window.localStorage.last_ui_load === "v1") {
+            //     indexpath = "/index.html";
+            // } else if (window.localStorage.last_ui_load === "v2") {
+            //     indexpath = "/index.html";
+            // }
             indexpath = baseUrl + indexpath;
             if (location.hash.length > 2) {
                 indexpath += location.hash;
