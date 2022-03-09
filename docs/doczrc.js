@@ -20,8 +20,8 @@ import menu from "./docz-lib/config/menu";
 import versions from './docz-lib/config/versions';
 
 module.exports = {
-	title: "Apache Atlas – Data Governance and Metadata framework for Hadoop",
-	description: "Apache Atlas – Data Governance and Metadata framework for Hadoop",
+	title: "Data Realm – Data Governance and Metadata framework for Hadoop",
+	description: "Data Realm – Data Governance and Metadata framework for Hadoop",
 	files: "**/*.{md,mdx}",
 	base: "/",
 	baseUrl:"./public",

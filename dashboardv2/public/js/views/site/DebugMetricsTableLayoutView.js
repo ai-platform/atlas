@@ -153,14 +153,14 @@ define(['require',
                     numops: {
                         label: "Count",
                         cell: "html",
-                        toolTip: "Number of times the API has been hit since Atlas started",
+                        toolTip: "Number of times the API has been hit since Data Realm started",
                         sortable: true,
                         editable: false
                     },
                     minTime: {
                         label: "Min Time (secs)",
                         cell: "html",
-                        toolTip: "Minimum API execution time since Atlas started",
+                        toolTip: "Minimum API execution time since Data Realm started",
                         sortable: true,
                         editable: false,
                         formatter: _.extend({}, Backgrid.CellFormatter.prototype, {
@@ -172,7 +172,7 @@ define(['require',
                     maxTime: {
                         label: "Max Time (secs)",
                         cell: "html",
-                        toolTip: "Maximum API execution time since Atlas started",
+                        toolTip: "Maximum API execution time since Data Realm started",
                         sortable: true,
                         editable: false,
                         formatter: _.extend({}, Backgrid.CellFormatter.prototype, {

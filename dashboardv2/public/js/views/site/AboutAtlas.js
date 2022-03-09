@@ -44,7 +44,7 @@ define(['require',
             initialize: function(options) {
                 _.extend(this, options);
                 var modal = new Modal({
-                    title: 'Apache Atlas',
+                    title: 'Data Realm',
                     content: this,
                     okCloses: true,
                     showFooter: true,

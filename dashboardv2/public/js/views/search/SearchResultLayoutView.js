@@ -681,7 +681,7 @@ define([
              ' <div class="searchTypeLabel"><b>'+that.searchType+'</b></div>'+
            
               '<div class="entityLink searchTypeSubLabel">'+
-                '<div class="entityLink"> Search Atlas for existing entities or '+
+                '<div class="entityLink"> Search Data Realm for existing entities or '+
                   '<a href="javascript:void(0)" data-id="createEntity">create new entity</a></div></div></div>';
                     
                   
